@@ -1,0 +1,46 @@
+state,age,rate
+New South Wales,50-54,32.3
+New South Wales,55-59,37.0
+New South Wales,60-64,41.5
+New South Wales,65-69,47.6
+New South Wales,70-74,49.1
+Victoria,50-54,36.7
+Victoria,55-59,41.4
+Victoria,60-64,46.0
+Victoria,65-69,52.2
+Victoria,70-74,53.4
+Queensland,50-54,30.9
+Queensland,55-59,36.2
+Queensland,60-64,40.3
+Queensland,65-69,48.2
+Queensland,70-74,50.5
+Western Australia,50-54,35.2
+Western Australia,55-59,39.9
+Western Australia,60-64,44.1
+Western Australia,65-69,51.6
+Western Australia,70-74,53.6
+South Australia,50-54,38.0
+South Australia,55-59,43.4
+South Australia,60-64,48.5
+South Australia,65-69,55.8
+South Australia,70-74,58.9
+Tasmania,50-54,36.6
+Tasmania,55-59,42.0
+Tasmania,60-64,47.5
+Tasmania,65-69,55.0
+Tasmania,70-74,58.3
+ACT,50-54,37.6
+ACT,55-59,42.8
+ACT,60-64,47.5
+ACT,65-69,52.8
+ACT,70-74,55.1
+Northern Territory,50-54,20.1
+Northern Territory,55-59,24.7
+Northern Territory,60-64,29.6
+Northern Territory,65-69,35.0
+Northern Territory,70-74,34.6
+Australia,50-54,33.9
+Australia,55-59,38.8
+Australia,60-64,43.3
+Australia,65-69,50.0
+Australia,70-74,51.9

@@ -1,0 +1,150 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "padding": {
+    "left": 30,
+    "right": 45,
+    "top": 5,
+    "bottom": 5
+  },
+  "data": {
+    "url": "data/bowel_state_age.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": "container",
+  "height": 320,
+  "encoding": {
+    "x": {
+      "field": "age",
+      "type": "ordinal",
+      "title": "Age group",
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0,
+        "labelFontSize": 13,
+        "ticks": false,
+        "domain": false,
+        "titleFontSize": 12
+      }
+    },
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "rate",
+        "op": "mean",
+        "order": "descending"
+      },
+      "axis": {
+        "ticks": false,
+        "domain": false,
+        "labelFontSize": 13
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#faf6ef",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "rate",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "tealblues",
+            "domain": [
+              15,
+              60
+            ]
+          },
+          "legend": {
+            "title": "Screened %",
+            "gradientLength": 200
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "age",
+            "title": "Age"
+          },
+          {
+            "field": "rate",
+            "title": "Screened (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12.5
+      },
+      "encoding": {
+        "text": {
+          "field": "rate",
+          "type": "quantitative",
+          "format": ".0f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.rate > 38",
+            "value": "white"
+          },
+          "value": "#2b2a28"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  }
+}

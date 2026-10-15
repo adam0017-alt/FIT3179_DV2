@@ -1,0 +1,181 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "padding": {
+    "left": 30,
+    "right": 10,
+    "top": 5,
+    "bottom": 5
+  },
+  "data": {
+    "url": "data/bowel_state_sex.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "encoding": {
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "women",
+        "order": "descending"
+      },
+      "axis": {
+        "ticks": false,
+        "domain": false,
+        "labelFontSize": 13,
+        "grid": true
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 3,
+        "color": "#cfc6b6"
+      },
+      "encoding": {
+        "x": {
+          "field": "men",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              20,
+              55
+            ]
+          },
+          "title": "Share of people aged 50\u201374 who returned a bowel screening kit, 2023\u201324 (%)"
+        },
+        "x2": {
+          "field": "women"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "fold": [
+            "men",
+            "women"
+          ],
+          "as": [
+            "who",
+            "rate"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 170,
+        "opacity": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "who",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "women",
+              "men"
+            ],
+            "range": [
+              "#c23b78",
+              "#3b6fa8"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "labelExpr": "datum.value=='women' ? 'Women' : 'Men'"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "who",
+            "title": "Group"
+          },
+          {
+            "field": "rate",
+            "title": "Screened (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 0,
+        "dy": -14,
+        "fontSize": 11,
+        "color": "#6b665e"
+      },
+      "encoding": {
+        "x": {
+          "field": "women",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "gap",
+          "type": "quantitative",
+          "format": "+.1f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  }
+}

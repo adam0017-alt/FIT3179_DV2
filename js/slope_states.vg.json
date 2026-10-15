@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "padding": {
+    "left": 125,
+    "right": 40,
+    "top": 5,
+    "bottom": 5
+  },
+  "data": {
+    "url": "data/bowel_state_slope.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "rate": "number"
+      }
+    }
+  },
+  "width": 300,
+  "height": 460,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0,
+        "labelFontSize": 13,
+        "ticks": false,
+        "domain": false
+      },
+      "scale": {
+        "padding": 0.6
+      }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          24,
+          49
+        ]
+      },
+      "axis": null
+    },
+    "detail": {
+      "field": "state",
+      "type": "nominal"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.2
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.state=='Northern Territory'",
+            "value": "#b4551d"
+          },
+          "value": "#9aa7a3"
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "year",
+            "title": "Period"
+          },
+          {
+            "field": "rate",
+            "title": "Screened (%)"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 60
+      },
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "datum.state=='Northern Territory'",
+            "value": "#b4551d"
+          },
+          "value": "#9aa7a3"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year=='2014\u201315'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -10,
+        "fontSize": 12,
+        "fill": "#2b2a28"
+      },
+      "encoding": {
+        "text": {
+          "field": "state"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year=='2023\u201324'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 12,
+        "fill": "#2b2a28"
+      },
+      "encoding": {
+        "text": {
+          "field": "rate",
+          "format": ".1f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/national_trend.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": "container",
+  "height": 340,
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "color": "#efe3d1",
+        "opacity": 0.7
+      },
+      "data": {
+        "values": [
+          {
+            "a": 2019.6,
+            "b": 2021.4
+          }
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "a",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2014.6,
+              2025.6
+            ],
+            "zero": false
+          }
+        },
+        "x2": {
+          "field": "b"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3,
+        "point": {
+          "filled": true,
+          "size": 70
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative",
+          "axis": {
+            "format": "d",
+            "values": [
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024,
+              2025
+            ],
+            "title": "Year the two-year period ended"
+          },
+          "scale": {
+            "domain": [
+              2014.6,
+              2025.6
+            ],
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative",
+          "title": "Share of eligible people screened (%)",
+          "scale": {
+            "domain": [
+              30,
+              60
+            ],
+            "zero": false
+          }
+        },
+        "color": {
+          "field": "program",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Bowel",
+              "Breast",
+              "Cervical"
+            ],
+            "range": [
+              "#b4551d",
+              "#c23b78",
+              "#1f8a7e"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "program",
+            "title": "Program"
+          },
+          {
+            "field": "window",
+            "title": "Period"
+          },
+          {
+            "field": "rate",
+            "title": "Participation (%)"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "(datum.program=='Breast' && datum.year==2025) || (datum.program=='Bowel' && datum.year==2024)"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 10,
+        "fontSize": 14,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "program"
+        },
+        "color": {
+          "field": "program",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Bowel",
+              "Breast",
+              "Cervical"
+            ],
+            "range": [
+              "#b4551d",
+              "#c23b78",
+              "#1f8a7e"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 2020.5,
+            "y": 59,
+            "t": "COVID-19 years"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "color": "#6b665e"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              2014.6,
+              2025.6
+            ],
+            "zero": false
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  }
+}

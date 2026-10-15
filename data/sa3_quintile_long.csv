@@ -1,0 +1,992 @@
+sa3_code,sa3_name,irsd_quintile,rate,program
+10102,Queanbeyan,5,42.0139123071,Bowel
+10103,Snowy Mountains,4,42.8236381227,Bowel
+10104,South Coast,3,48.0826272408,Bowel
+10105,Goulburn - Mulwaree,2,41.5103941383,Bowel
+10106,Young - Yass,3,40.3731831901,Bowel
+10201,Gosford,4,42.6736312796,Bowel
+10202,Wyong,2,39.5922452987,Bowel
+10301,Bathurst,3,42.8946161307,Bowel
+10302,Lachlan Valley,2,37.0602644231,Bowel
+10303,Lithgow - Mudgee,2,39.9984731755,Bowel
+10304,Orange,3,41.7921853588,Bowel
+10401,Clarence Valley,1,41.9286596496,Bowel
+10402,Coffs Harbour,2,43.342133173,Bowel
+10501,Bourke - Cobar - Coonamble,1,27.7413937867,Bowel
+10502,Broken Hill and Far West,1,32.2514836795,Bowel
+10503,Dubbo,2,35.1856993263,Bowel
+10601,Lower Hunter,2,39.231996218,Bowel
+10602,Maitland,3,42.6258027095,Bowel
+10603,Port Stephens,2,45.9690173307,Bowel
+10604,Upper Hunter,2,36.8061391813,Bowel
+10701,Dapto - Port Kembla,2,38.5593607561,Bowel
+10703,Kiama - Shellharbour,3,44.2990250373,Bowel
+10704,Wollongong,4,44.7697227552,Bowel
+10801,Great Lakes,1,46.0119711306,Bowel
+10802,Kempsey - Nambucca,1,40.2955414765,Bowel
+10803,Lord Howe Island,5,38.2352941176,Bowel
+10804,Port Macquarie,3,44.4130763702,Bowel
+10805,Taree - Gloucester,1,44.3289100684,Bowel
+10901,Albury,2,43.0515493081,Bowel
+10902,Lower Murray,2,40.8820499118,Bowel
+10903,Upper Murray exc. Albury,2,44.2863573068,Bowel
+11001,Armidale,3,43.2899572886,Bowel
+11002,Inverell - Tenterfield,1,37.4234356668,Bowel
+11003,Moree - Narrabri,2,31.656607331,Bowel
+11004,Tamworth - Gunnedah,2,37.6653367028,Bowel
+11101,Lake Macquarie - East,3,46.6643789527,Bowel
+11102,Lake Macquarie - West,3,43.0202959191,Bowel
+11103,Newcastle,3,44.2686396378,Bowel
+11201,Richmond Valley - Coastal,3,41.8596607219,Bowel
+11202,Richmond Valley - Hinterland,1,37.3450921255,Bowel
+11203,Tweed Valley,3,39.9610024003,Bowel
+11301,Griffith - Murrumbidgee (West),2,35.0178939179,Bowel
+11302,Tumut - Tumbarumba,2,42.509993996,Bowel
+11303,Wagga Wagga,2,40.3224362441,Bowel
+11401,Shoalhaven,2,45.7841112327,Bowel
+11402,Southern Highlands,4,44.7333264399,Bowel
+11501,Baulkham Hills,5,42.989564145,Bowel
+11502,Dural - Wisemans Ferry,5,42.1631149577,Bowel
+11503,Hawkesbury,5,43.5080247307,Bowel
+11504,Rouse Hill - McGraths Hill,5,40.6372781745,Bowel
+11601,Blacktown,2,33.8107649236,Bowel
+11602,Blacktown - North,5,34.7900845481,Bowel
+11603,Mount Druitt,1,29.1686773771,Bowel
+11701,Botany,3,34.7572195185,Bowel
+11702,Marrickville - Sydenham - Petersham,4,39.7665702147,Bowel
+11703,Sydney Inner City,4,36.3819585559,Bowel
+11801,Eastern Suburbs - North,5,35.5766701736,Bowel
+11802,Eastern Suburbs - South,5,38.8814493595,Bowel
+11901,Bankstown,1,33.6559555948,Bowel
+11902,Canterbury,1,32.7555844855,Bowel
+11903,Hurstville,3,39.1236938256,Bowel
+11904,Kogarah - Rockdale,3,35.6727640929,Bowel
+12001,Canada Bay,5,41.7411437843,Bowel
+12002,Leichhardt,5,45.0818094321,Bowel
+12003,Strathfield - Burwood - Ashfield,3,38.0930404671,Bowel
+12101,Chatswood - Lane Cove,5,43.0591060819,Bowel
+12102,Hornsby,5,43.7578815578,Bowel
+12103,Ku-ring-gai,5,45.4378266875,Bowel
+12104,North Sydney - Mosman,5,44.5573236301,Bowel
+12201,Manly,5,49.6035467644,Bowel
+12202,Pittwater,5,48.6345158667,Bowel
+12203,Warringah,5,47.001023398,Bowel
+12301,Camden,4,40.5696117317,Bowel
+12302,Campbelltown (NSW),1,33.0904703197,Bowel
+12303,Wollondilly,4,41.4356248156,Bowel
+12401,Blue Mountains,4,45.7186609397,Bowel
+12403,Penrith,3,37.89806977,Bowel
+12404,Richmond - Windsor,3,38.9764404713,Bowel
+12405,St Marys,2,33.5551817945,Bowel
+12501,Auburn,1,33.0020137298,Bowel
+12502,Carlingford,4,38.0542962911,Bowel
+12503,Merrylands - Guildford,1,31.4929651076,Bowel
+12504,Parramatta,4,33.9606140827,Bowel
+12601,Pennant Hills - Epping,5,44.6390840178,Bowel
+12602,Ryde - Hunters Hill,5,42.267895909,Bowel
+12701,Bringelly - Green Valley,2,34.767517476,Bowel
+12702,Fairfield,1,37.6280197256,Bowel
+12703,Liverpool,1,32.3560773093,Bowel
+12801,Cronulla - Miranda - Caringbah,5,44.6824912583,Bowel
+12802,Sutherland - Menai - Heathcote,5,45.8966985227,Bowel
+20101,Ballarat,3,47.4368291807,Bowel
+20102,Creswick - Daylesford - Ballan,4,46.9725727205,Bowel
+20103,Maryborough - Pyrenees,1,43.1337691041,Bowel
+20201,Bendigo,2,49.1882661025,Bowel
+20202,Heathcote - Castlemaine - Kyneton,4,49.9815279184,Bowel
+20203,Loddon - Elmore,2,42.3357219468,Bowel
+20301,Barwon - West,4,48.8326713043,Bowel
+20302,Geelong,3,47.2143900211,Bowel
+20303,Surf Coast - Bellarine Peninsula,5,55.8326416217,Bowel
+20401,Upper Goulburn Valley,3,44.7585496643,Bowel
+20402,Wangaratta - Benalla,3,49.529281462,Bowel
+20403,Wodonga - Alpine,3,48.2081893029,Bowel
+20501,Baw Baw,3,47.3776477294,Bowel
+20502,Gippsland - East,2,50.1182176417,Bowel
+20503,Gippsland - South West,3,49.542288993,Bowel
+20504,Latrobe Valley,1,44.1764450935,Bowel
+20505,Wellington,2,45.9057788044,Bowel
+20601,Brunswick - Coburg,5,45.73425575,Bowel
+20602,Darebin - South,5,50.3093427823,Bowel
+20603,Essendon,4,48.9565560129,Bowel
+20604,Melbourne City,4,37.6796378311,Bowel
+20605,Port Phillip,5,42.2717521403,Bowel
+20606,Stonnington - West,5,40.9117305459,Bowel
+20607,Yarra,4,46.226664675,Bowel
+20701,Boroondara,5,48.7377236069,Bowel
+20702,Manningham - West,4,44.4303039447,Bowel
+20703,Whitehorse - West,4,47.5274108472,Bowel
+20801,Bayside,5,51.5354580225,Bowel
+20802,Glen Eira,5,44.4805693179,Bowel
+20803,Kingston,5,45.7633220904,Bowel
+20804,Stonnington - East,5,49.0901414092,Bowel
+20901,Banyule,5,49.0843428917,Bowel
+20902,Darebin - North,3,41.0908559667,Bowel
+20903,Nillumbik - Kinglake,5,52.912590543,Bowel
+20904,Whittlesea - Wallan,3,39.7257829639,Bowel
+21001,Keilor,4,46.6416486452,Bowel
+21002,Macedon Ranges,5,50.7843552761,Bowel
+21003,Moreland - North,3,39.8432326851,Bowel
+21004,Sunbury,4,45.3123595506,Bowel
+21005,Tullamarine - Broadmeadows,1,35.5128853115,Bowel
+21101,Knox,4,44.7435559137,Bowel
+21102,Manningham - East,5,51.8884518546,Bowel
+21103,Maroondah,4,47.0284570868,Bowel
+21104,Whitehorse - East,4,48.5682130799,Bowel
+21105,Yarra Ranges,4,46.1769231473,Bowel
+21201,Cardinia,4,41.4314626081,Bowel
+21202,Casey - North,3,39.6831036686,Bowel
+21203,Casey - South,3,35.0928692578,Bowel
+21204,Dandenong,1,37.4209894726,Bowel
+21205,Monash,4,42.7654210118,Bowel
+21301,Brimbank,1,40.2880671473,Bowel
+21302,Hobsons Bay,4,47.1064543864,Bowel
+21303,Maribyrnong,3,43.4085569506,Bowel
+21304,Melton - Bacchus Marsh,3,38.6846266545,Bowel
+21305,Wyndham,3,37.0820214185,Bowel
+21401,Frankston,3,39.9084225206,Bowel
+21402,Mornington Peninsula,4,48.1840296478,Bowel
+21501,Grampians,2,44.5466325786,Bowel
+21502,Mildura,1,41.7291146267,Bowel
+21503,Murray River - Swan Hill,1,43.8460148202,Bowel
+21601,Campaspe,2,45.5328089434,Bowel
+21602,Moira,2,45.7434588221,Bowel
+21603,Shepparton,1,44.1901408451,Bowel
+21701,Glenelg - Southern Grampians,2,47.3238674073,Bowel
+21703,Colac - Corangamite,2,44.7351546032,Bowel
+21704,Warrnambool,3,47.267534683,Bowel
+30101,Capalaba,4,41.1018270085,Bowel
+30102,Cleveland - Stradbroke,4,41.5851956601,Bowel
+30103,Wynnum - Manly,4,41.3943748702,Bowel
+30201,Bald Hills - Everton Park,5,43.603113104,Bowel
+30202,Chermside,4,40.7577235912,Bowel
+30203,Nundah,4,39.588154606,Bowel
+30204,Sandgate,3,41.2496123129,Bowel
+30301,Carindale,5,43.5433338057,Bowel
+30302,Holland Park - Yeronga,5,40.7531625234,Bowel
+30303,Mt Gravatt,4,39.1598282871,Bowel
+30304,Nathan,4,39.6286264649,Bowel
+30305,Rocklea - Acacia Ridge,3,36.1551851917,Bowel
+30306,Sunnybank,3,37.7202768765,Bowel
+30401,Centenary,5,44.1148971712,Bowel
+30402,Kenmore - Brookfield - Moggill,5,46.399010909,Bowel
+30403,Sherwood - Indooroopilly,5,43.9499924305,Bowel
+30404,The Gap - Enoggera,5,45.5625995335,Bowel
+30501,Brisbane Inner,4,37.4534719124,Bowel
+30502,Brisbane Inner - East,5,41.8427340781,Bowel
+30503,Brisbane Inner - North,5,42.0450213244,Bowel
+30504,Brisbane Inner - West,5,44.8212927895,Bowel
+30601,Cairns - North,4,42.2817049897,Bowel
+30602,Cairns - South,1,36.6344972744,Bowel
+30603,Innisfail - Cassowary Coast,1,37.1355254134,Bowel
+30604,Port Douglas - Daintree,2,38.4910485934,Bowel
+30605,Tablelands (East) - Kuranda,1,41.1852676808,Bowel
+30701,Darling Downs (West) - Maranoa,2,36.2910498461,Bowel
+30702,Darling Downs - East,2,38.0091556426,Bowel
+30703,Granite Belt,1,39.4885211522,Bowel
+30801,Central Highlands (Qld),2,30.6631893294,Bowel
+30803,Rockhampton,2,39.1925518038,Bowel
+30804,Biloela,3,37.7174088043,Bowel
+30805,Gladstone,2,35.1811003441,Bowel
+30901,Broadbeach - Burleigh,4,41.7638265007,Bowel
+30902,Coolangatta,4,41.8266507207,Bowel
+30903,Gold Coast - North,3,39.5522057762,Bowel
+30904,Gold Coast Hinterland,4,41.0460739341,Bowel
+30905,Mudgeeraba - Tallebudgera,5,39.8096725525,Bowel
+30906,Nerang,4,37.4243037215,Bowel
+30907,Ormeau - Oxenford,4,36.6474143742,Bowel
+30908,Robina,4,40.1028783291,Bowel
+30909,Southport,2,35.8529172418,Bowel
+30910,Surfers Paradise,3,37.5180144038,Bowel
+31001,Forest Lake - Oxley,1,35.4706597081,Bowel
+31002,Ipswich Hinterland,2,37.8179093443,Bowel
+31003,Ipswich Inner,2,35.1832393927,Bowel
+31004,Springfield - Redbank,2,32.7910196815,Bowel
+31101,Beaudesert,1,34.7189978271,Bowel
+31102,Beenleigh,1,31.1514009827,Bowel
+31103,Browns Plains,1,31.2458813701,Bowel
+31104,Jimboomba,3,35.1620840018,Bowel
+31105,Loganlea - Carbrook,2,35.2230027493,Bowel
+31106,Springwood - Kingston,1,31.3347539884,Bowel
+31201,Bowen Basin - North,2,32.8310676617,Bowel
+31202,Mackay,3,39.4609561373,Bowel
+31203,Whitsunday,3,39.7731585181,Bowel
+31301,Bribie - Beachmere,2,44.9267622826,Bowel
+31302,Caboolture,1,35.1068489751,Bowel
+31303,Caboolture Hinterland,2,40.7294400711,Bowel
+31304,Narangba - Burpengary,2,38.0193120032,Bowel
+31305,Redcliffe,2,42.07411865,Bowel
+31401,The Hills District,5,45.6189151169,Bowel
+31402,North Lakes,3,36.8935981019,Bowel
+31403,Strathpine,2,36.5471407817,Bowel
+31501,Far North,1,25.0722664298,Bowel
+31502,Outback - North,1,22.031696414,Bowel
+31503,Outback - South,2,34.1719178532,Bowel
+31601,Buderim,4,45.4381363578,Bowel
+31602,Caloundra,4,46.2158548233,Bowel
+31603,Maroochy,4,46.3135173766,Bowel
+31605,Noosa,4,47.5394010933,Bowel
+31606,Sunshine Coast Hinterland,4,41.9340244283,Bowel
+31607,Nambour,3,40.9536050454,Bowel
+31608,Noosa Hinterland,4,45.17330503,Bowel
+31701,Toowoomba,2,40.4870268805,Bowel
+31801,Charters Towers - Ayr - Ingham,1,32.3722339326,Bowel
+31802,Townsville,3,34.6735790251,Bowel
+31901,Bundaberg,1,41.9463922483,Bowel
+31902,Burnett,1,37.9371277301,Bowel
+31903,Gympie - Cooloola,1,43.1282324981,Bowel
+31904,Hervey Bay,1,45.5287366454,Bowel
+31905,Maryborough,1,42.8809884116,Bowel
+40101,Adelaide City,3,40.0410677618,Bowel
+40102,Adelaide Hills,5,53.5291121244,Bowel
+40103,Burnside,5,53.4804360071,Bowel
+40104,Campbelltown (SA),4,46.4343261995,Bowel
+40105,Norwood - Payneham - St Peters,4,49.876266705,Bowel
+40106,Prospect - Walkerville,5,50.6146156963,Bowel
+40107,Unley,5,54.1821241833,Bowel
+40201,Gawler - Two Wells,3,47.0213429541,Bowel
+40202,Playford,1,37.6983317335,Bowel
+40203,Port Adelaide - East,2,43.1869616092,Bowel
+40204,Salisbury,1,41.337748333,Bowel
+40205,Tea Tree Gully,4,50.3331123725,Bowel
+40301,Holdfast Bay,4,56.8752292807,Bowel
+40302,Marion,3,50.0937446658,Bowel
+40303,Mitcham,5,54.4017842893,Bowel
+40304,Onkaparinga,3,48.6489018413,Bowel
+40401,Charles Sturt,3,47.1190264754,Bowel
+40402,Port Adelaide - West,1,43.0552750677,Bowel
+40403,West Torrens,4,46.9896746582,Bowel
+40501,Barossa,3,51.1945159093,Bowel
+40502,Lower North,2,48.1277381604,Bowel
+40503,Mid North,1,42.5716776877,Bowel
+40504,Yorke Peninsula,1,51.062892389,Bowel
+40601,Eyre Peninsula and South West,1,43.2979864173,Bowel
+40602,Outback - North and East,1,36.5746543297,Bowel
+40701,Fleurieu - Kangaroo Island,2,52.9227567301,Bowel
+40702,Limestone Coast,2,46.1066957561,Bowel
+40703,Murray and Mallee,1,44.7970069647,Bowel
+50101,Augusta - Margaret River - Busselton,4,50.6938717041,Bowel
+50102,Bunbury,2,44.480872212,Bowel
+50103,Manjimup,2,47.8441256224,Bowel
+50201,Mandurah,2,46.2630723464,Bowel
+50301,Cottesloe - Claremont,5,48.9759964765,Bowel
+50302,Perth City,5,43.6147846143,Bowel
+50401,Bayswater - Bassendean,3,41.7346813366,Bowel
+50402,Mundaring,4,44.8150842893,Bowel
+50403,Swan,3,38.3649572282,Bowel
+50501,Joondalup,5,51.2356149924,Bowel
+50502,Stirling,4,44.170171934,Bowel
+50503,Wanneroo,3,41.6619125373,Bowel
+50601,Armadale,3,38.8915296131,Bowel
+50602,Belmont - Victoria Park,3,38.9360404088,Bowel
+50603,Canning,4,42.6984158003,Bowel
+50604,Gosnells,2,37.1601400693,Bowel
+50605,Kalamunda,4,43.971737421,Bowel
+50606,Serpentine - Jarrahdale,4,40.6297263853,Bowel
+50607,South Perth,5,47.0469552458,Bowel
+50701,Cockburn,4,42.9778355158,Bowel
+50702,Fremantle,4,47.7254257676,Bowel
+50703,Kwinana,2,34.2886812046,Bowel
+50704,Melville,5,49.7847606534,Bowel
+50705,Rockingham,3,42.1211603123,Bowel
+50901,Albany,2,46.7317687825,Bowel
+50902,Wheat Belt - North,2,39.9837793998,Bowel
+50903,Wheat Belt - South,3,41.9947246807,Bowel
+51001,Kimberley,1,23.8087989039,Bowel
+51002,East Pilbara,1,20.6534735858,Bowel
+51003,West Pilbara,4,29.1373025516,Bowel
+51101,Esperance,3,45.4585930543,Bowel
+51102,Gascoyne,2,37.6523901888,Bowel
+51103,Goldfields,2,26.7809112626,Bowel
+51104,Mid West,2,39.3708611835,Bowel
+60101,Brighton,1,40.3434255681,Bowel
+60102,Hobart - North East,3,50.6305688828,Bowel
+60103,Hobart - North West,1,40.515666314,Bowel
+60104,Hobart - South and West,4,54.2940771092,Bowel
+60105,Hobart Inner,4,52.4241814938,Bowel
+60106,Sorell - Dodges Ferry,3,45.6879039705,Bowel
+60201,Launceston,2,45.0920899546,Bowel
+60202,Meander Valley - West Tamar,2,47.1872688254,Bowel
+60203,North East,1,45.1362625173,Bowel
+60301,Central Highlands (Tas.),1,41.7455017551,Bowel
+60302,Huon - Bruny Island,3,49.5010227707,Bowel
+60303,South East Coast,1,51.0785862711,Bowel
+60401,Burnie - Ulverstone,1,45.9999458373,Bowel
+60402,Devonport,1,45.600027479,Bowel
+60403,West Coast,1,41.683855241,Bowel
+70101,Darwin City,5,31.4546027706,Bowel
+70102,Darwin Suburbs,3,31.0002220721,Bowel
+70103,Litchfield,4,34.1203692112,Bowel
+70104,Palmerston,3,27.645998058,Bowel
+70201,Alice Springs,1,22.9858378859,Bowel
+70202,Barkly,1,12.1180710631,Bowel
+70203,Daly - Tiwi - West Arnhem,1,15.5498079523,Bowel
+70204,East Arnhem,1,10.4358267724,Bowel
+70205,Katherine,1,16.9259281636,Bowel
+80101,Belconnen,5,44.0544937799,Bowel
+80103,Canberra East,1,30.3125968096,Bowel
+80104,Gungahlin,5,42.3538537415,Bowel
+80105,North Canberra,5,47.046692051,Bowel
+80106,South Canberra,5,48.8783375262,Bowel
+80107,Tuggeranong,5,44.4810258187,Bowel
+80108,Weston Creek,5,47.082376567,Bowel
+80109,Woden Valley,5,48.752228164,Bowel
+80110,Molonglo,5,43.0710801715,Bowel
+80111,Uriarra - Namadgi,5,31.7762966705,Bowel
+10102,Queanbeyan,5,66.0916848829,Breast
+10103,Snowy Mountains,4,60.9788732622,Breast
+10104,South Coast,3,61.2322260571,Breast
+10105,Goulburn - Mulwaree,2,57.7096381488,Breast
+10106,Young - Yass,3,60.4084003535,Breast
+10201,Gosford,4,47.3234494492,Breast
+10202,Wyong,2,46.2799255586,Breast
+10301,Bathurst,3,57.0704311789,Breast
+10302,Lachlan Valley,2,60.3027425221,Breast
+10303,Lithgow - Mudgee,2,50.1630663442,Breast
+10304,Orange,3,59.6499698276,Breast
+10401,Clarence Valley,1,54.8858235915,Breast
+10402,Coffs Harbour,2,58.0914013426,Breast
+10501,Bourke - Cobar - Coonamble,1,52.4422259016,Breast
+10502,Broken Hill and Far West,1,58.5099015984,Breast
+10503,Dubbo,2,57.5483210326,Breast
+10601,Lower Hunter,2,57.6887914993,Breast
+10602,Maitland,3,60.4646076281,Breast
+10603,Port Stephens,2,62.4101688235,Breast
+10604,Upper Hunter,2,62.7189236775,Breast
+10701,Dapto - Port Kembla,2,48.9793653559,Breast
+10703,Kiama - Shellharbour,3,55.1923863082,Breast
+10704,Wollongong,4,54.2762005269,Breast
+10801,Great Lakes,1,59.2193182385,Breast
+10802,Kempsey - Nambucca,1,56.2944034287,Breast
+10804,Port Macquarie,3,60.425081281,Breast
+10805,Taree - Gloucester,1,57.156524512,Breast
+10901,Albury,2,58.3197719789,Breast
+10902,Lower Murray,2,53.6003308048,Breast
+10903,Upper Murray exc. Albury,2,56.7428705336,Breast
+11001,Armidale,3,63.6172951005,Breast
+11002,Inverell - Tenterfield,1,55.0119133797,Breast
+11003,Moree - Narrabri,2,54.3960159627,Breast
+11004,Tamworth - Gunnedah,2,63.6831864942,Breast
+11101,Lake Macquarie - East,3,63.9472359339,Breast
+11102,Lake Macquarie - West,3,57.162290152,Breast
+11103,Newcastle,3,61.691397018,Breast
+11201,Richmond Valley - Coastal,3,56.0498763661,Breast
+11202,Richmond Valley - Hinterland,1,55.7196141096,Breast
+11203,Tweed Valley,3,54.3824273717,Breast
+11301,Griffith - Murrumbidgee (West),2,58.1354983727,Breast
+11302,Tumut - Tumbarumba,2,57.0295351463,Breast
+11303,Wagga Wagga,2,62.4629813273,Breast
+11401,Shoalhaven,2,56.2253304924,Breast
+11402,Southern Highlands,4,55.523907583,Breast
+11501,Baulkham Hills,5,50.0519692596,Breast
+11502,Dural - Wisemans Ferry,5,50.0628173203,Breast
+11601,Blacktown,2,39.8123327661,Breast
+11602,Blacktown - North,5,41.16741142,Breast
+11603,Mount Druitt,1,37.5397491186,Breast
+11702,Marrickville - Sydenham - Petersham,4,56.7293800482,Breast
+11703,Sydney Inner City,4,53.0027175528,Breast
+11801,Eastern Suburbs - North,5,47.7969776191,Breast
+11802,Eastern Suburbs - South,5,57.0985589539,Breast
+11901,Bankstown,1,43.591885957,Breast
+11902,Canterbury,1,43.9794770469,Breast
+11903,Hurstville,3,53.4992794024,Breast
+11904,Kogarah - Rockdale,3,50.1299238129,Breast
+12001,Canada Bay,5,50.0854302881,Breast
+12002,Leichhardt,5,58.9461977907,Breast
+12003,Strathfield - Burwood - Ashfield,3,49.6799693227,Breast
+12101,Chatswood - Lane Cove,5,49.6061231359,Breast
+12102,Hornsby,5,51.9757533093,Breast
+12103,Ku-ring-gai,5,48.8406703721,Breast
+12104,North Sydney - Mosman,5,47.8089877048,Breast
+12201,Manly,5,54.6280629546,Breast
+12202,Pittwater,5,51.2065917521,Breast
+12203,Warringah,5,51.7818488629,Breast
+12301,Camden,4,49.5077329263,Breast
+12302,Campbelltown (NSW),1,46.3992558078,Breast
+12401,Blue Mountains,4,50.308569771,Breast
+12403,Penrith,3,48.4990984553,Breast
+12405,St Marys,2,42.7446107913,Breast
+12501,Auburn,1,40.8173987658,Breast
+12502,Carlingford,4,43.5247585801,Breast
+12503,Merrylands - Guildford,1,43.8734466109,Breast
+12601,Pennant Hills - Epping,5,49.0246566931,Breast
+12602,Ryde - Hunters Hill,5,48.1322115114,Breast
+12701,Bringelly - Green Valley,2,44.4578432778,Breast
+12702,Fairfield,1,48.6675433844,Breast
+12703,Liverpool,1,44.9485737619,Breast
+12801,Cronulla - Miranda - Caringbah,5,56.1326254272,Breast
+12802,Sutherland - Menai - Heathcote,5,61.2777252007,Breast
+20101,Ballarat,3,55.1627573648,Breast
+20102,Creswick - Daylesford - Ballan,4,50.8563029271,Breast
+20103,Maryborough - Pyrenees,1,49.52321447,Breast
+20201,Bendigo,2,57.6346263368,Breast
+20202,Heathcote - Castlemaine - Kyneton,4,54.8616691634,Breast
+20203,Loddon - Elmore,2,48.1602506649,Breast
+20301,Barwon - West,4,57.4374063088,Breast
+20302,Geelong,3,56.7182748244,Breast
+20303,Surf Coast - Bellarine Peninsula,5,58.2204580461,Breast
+20401,Upper Goulburn Valley,3,52.9214905933,Breast
+20402,Wangaratta - Benalla,3,53.3094052241,Breast
+20403,Wodonga - Alpine,3,50.9566746035,Breast
+20501,Baw Baw,3,50.8588957055,Breast
+20502,Gippsland - East,2,56.013045744,Breast
+20503,Gippsland - South West,3,51.5310084062,Breast
+20504,Latrobe Valley,1,53.0126114586,Breast
+20505,Wellington,2,54.5400149193,Breast
+20601,Brunswick - Coburg,5,56.4762132441,Breast
+20602,Darebin - South,5,59.6444193594,Breast
+20603,Essendon,4,54.247310001,Breast
+20604,Melbourne City,4,50.3790329977,Breast
+20605,Port Phillip,5,53.3192789111,Breast
+20606,Stonnington - West,5,49.0389429448,Breast
+20607,Yarra,4,52.7510148188,Breast
+20701,Boroondara,5,54.0593700797,Breast
+20702,Manningham - West,4,52.6766181959,Breast
+20703,Whitehorse - West,4,54.5205658041,Breast
+20801,Bayside,5,54.4245244286,Breast
+20802,Glen Eira,5,56.1723813304,Breast
+20803,Kingston,5,53.355549859,Breast
+20804,Stonnington - East,5,52.0862416628,Breast
+20901,Banyule,5,58.4593755139,Breast
+20902,Darebin - North,3,52.9541534278,Breast
+20903,Nillumbik - Kinglake,5,57.817786299,Breast
+20904,Whittlesea - Wallan,3,50.136741278,Breast
+21001,Keilor,4,55.4261514029,Breast
+21002,Macedon Ranges,5,56.0382916053,Breast
+21003,Moreland - North,3,53.7754432042,Breast
+21004,Sunbury,4,50.5583756345,Breast
+21005,Tullamarine - Broadmeadows,1,48.6698520667,Breast
+21101,Knox,4,56.0587810166,Breast
+21102,Manningham - East,5,59.7472939815,Breast
+21103,Maroondah,4,58.3942460919,Breast
+21104,Whitehorse - East,4,57.0487554668,Breast
+21105,Yarra Ranges,4,55.7419295506,Breast
+21201,Cardinia,4,49.1180295392,Breast
+21202,Casey - North,3,51.4128026506,Breast
+21203,Casey - South,3,44.2283664719,Breast
+21204,Dandenong,1,47.7920560748,Breast
+21205,Monash,4,53.665906948,Breast
+21301,Brimbank,1,47.5581857027,Breast
+21302,Hobsons Bay,4,53.9136431554,Breast
+21303,Maribyrnong,3,52.3707759374,Breast
+21304,Melton - Bacchus Marsh,3,46.4013412145,Breast
+21305,Wyndham,3,47.5977999255,Breast
+21401,Frankston,3,46.2292676974,Breast
+21402,Mornington Peninsula,4,53.1210725614,Breast
+21501,Grampians,2,54.854208816,Breast
+21502,Mildura,1,51.6226415094,Breast
+21503,Murray River - Swan Hill,1,48.2763694788,Breast
+21601,Campaspe,2,53.6853032775,Breast
+21602,Moira,2,54.8348514123,Breast
+21603,Shepparton,1,56.2309270099,Breast
+21701,Glenelg - Southern Grampians,2,57.1929824734,Breast
+21703,Colac - Corangamite,2,56.8103318817,Breast
+21704,Warrnambool,3,59.3515948989,Breast
+30101,Capalaba,4,54.2209700837,Breast
+30102,Cleveland - Stradbroke,4,51.5070988588,Breast
+30103,Wynnum - Manly,4,54.0983674084,Breast
+30201,Bald Hills - Everton Park,5,54.2186345144,Breast
+30202,Chermside,4,52.8666703249,Breast
+30203,Nundah,4,51.537923098,Breast
+30204,Sandgate,3,49.8938373376,Breast
+30301,Carindale,5,51.9940493357,Breast
+30302,Holland Park - Yeronga,5,49.3033496088,Breast
+30303,Mt Gravatt,4,51.7412756777,Breast
+30304,Nathan,4,51.4416615236,Breast
+30305,Rocklea - Acacia Ridge,3,50.003497337,Breast
+30306,Sunnybank,3,51.0743328482,Breast
+30401,Centenary,5,50.5453038328,Breast
+30402,Kenmore - Brookfield - Moggill,5,48.2439537329,Breast
+30403,Sherwood - Indooroopilly,5,45.7203706231,Breast
+30404,The Gap - Enoggera,5,52.1491193413,Breast
+30501,Brisbane Inner,4,46.2281616862,Breast
+30502,Brisbane Inner - East,5,47.366225715,Breast
+30503,Brisbane Inner - North,5,47.8288116783,Breast
+30504,Brisbane Inner - West,5,46.2904335857,Breast
+30601,Cairns - North,4,57.9550790215,Breast
+30602,Cairns - South,1,54.4368443423,Breast
+30603,Innisfail - Cassowary Coast,1,55.0502904258,Breast
+30604,Port Douglas - Daintree,2,54.1048034934,Breast
+30605,Tablelands (East) - Kuranda,1,52.2409852922,Breast
+30701,Darling Downs (West) - Maranoa,2,51.6876784516,Breast
+30702,Darling Downs - East,2,50.6165485209,Breast
+30703,Granite Belt,1,52.892463838,Breast
+30801,Central Highlands (Qld),2,55.1560120947,Breast
+30803,Rockhampton,2,60.1085358772,Breast
+30804,Biloela,3,50.7142820342,Breast
+30805,Gladstone,2,53.7903649152,Breast
+30901,Broadbeach - Burleigh,4,53.7535297826,Breast
+30902,Coolangatta,4,54.8684680339,Breast
+30903,Gold Coast - North,3,49.1179790297,Breast
+30904,Gold Coast Hinterland,4,47.7813460121,Breast
+30905,Mudgeeraba - Tallebudgera,5,52.2729825591,Breast
+30906,Nerang,4,50.3836241608,Breast
+30907,Ormeau - Oxenford,4,47.6098735827,Breast
+30908,Robina,4,54.1752858945,Breast
+30909,Southport,2,47.6158335606,Breast
+30910,Surfers Paradise,3,45.4146830293,Breast
+31001,Forest Lake - Oxley,1,48.4244426708,Breast
+31002,Ipswich Hinterland,2,52.5368414108,Breast
+31003,Ipswich Inner,2,50.0352704691,Breast
+31004,Springfield - Redbank,2,47.0800776839,Breast
+31101,Beaudesert,1,47.4957387817,Breast
+31102,Beenleigh,1,43.1380090609,Breast
+31103,Browns Plains,1,45.3710726003,Breast
+31104,Jimboomba,3,48.4354144537,Breast
+31105,Loganlea - Carbrook,2,46.0887562965,Breast
+31106,Springwood - Kingston,1,45.2804039004,Breast
+31201,Bowen Basin - North,2,51.2026191687,Breast
+31202,Mackay,3,60.2744846794,Breast
+31203,Whitsunday,3,54.5855139208,Breast
+31301,Bribie - Beachmere,2,57.9325996557,Breast
+31302,Caboolture,1,47.5840740644,Breast
+31303,Caboolture Hinterland,2,51.2404988014,Breast
+31304,Narangba - Burpengary,2,49.7016745152,Breast
+31305,Redcliffe,2,49.4662968374,Breast
+31401,The Hills District,5,52.9004987823,Breast
+31402,North Lakes,3,47.9158699857,Breast
+31403,Strathpine,2,48.8717034325,Breast
+31501,Far North,1,41.8108962785,Breast
+31502,Outback - North,1,52.2639200891,Breast
+31503,Outback - South,2,51.5523743367,Breast
+31601,Buderim,4,54.6537814819,Breast
+31602,Caloundra,4,56.427910206,Breast
+31603,Maroochy,4,54.6549599047,Breast
+31605,Noosa,4,51.8443282381,Breast
+31606,Sunshine Coast Hinterland,4,50.295507724,Breast
+31607,Nambour,3,52.3004549131,Breast
+31608,Noosa Hinterland,4,49.2748466628,Breast
+31701,Toowoomba,2,52.3208502114,Breast
+31801,Charters Towers - Ayr - Ingham,1,60.6593406593,Breast
+31802,Townsville,3,61.4703992709,Breast
+31901,Bundaberg,1,49.2918275396,Breast
+31902,Burnett,1,48.1972681307,Breast
+31903,Gympie - Cooloola,1,48.8715206232,Breast
+31904,Hervey Bay,1,52.806062831,Breast
+31905,Maryborough,1,50.5275394229,Breast
+40101,Adelaide City,3,56.0921248143,Breast
+40102,Adelaide Hills,5,58.0405361263,Breast
+40103,Burnside,5,60.4793608522,Breast
+40104,Campbelltown (SA),4,55.3677143729,Breast
+40105,Norwood - Payneham - St Peters,4,57.2976752316,Breast
+40106,Prospect - Walkerville,5,59.3980817991,Breast
+40107,Unley,5,60.4063349864,Breast
+40201,Gawler - Two Wells,3,55.3255372946,Breast
+40202,Playford,1,45.1700154559,Breast
+40203,Port Adelaide - East,2,49.4810444663,Breast
+40204,Salisbury,1,50.3749200256,Breast
+40205,Tea Tree Gully,4,58.6842793618,Breast
+40301,Holdfast Bay,4,61.6589087726,Breast
+40302,Marion,3,58.8084609425,Breast
+40303,Mitcham,5,62.8510791945,Breast
+40304,Onkaparinga,3,56.9274759553,Breast
+40401,Charles Sturt,3,57.5770456961,Breast
+40402,Port Adelaide - West,1,52.8020289714,Breast
+40403,West Torrens,4,57.6497175141,Breast
+40501,Barossa,3,59.7756170531,Breast
+40502,Lower North,2,53.0283580348,Breast
+40503,Mid North,1,54.5435834105,Breast
+40504,Yorke Peninsula,1,60.1300298717,Breast
+40601,Eyre Peninsula and South West,1,48.0966442953,Breast
+40602,Outback - North and East,1,47.7737511732,Breast
+40701,Fleurieu - Kangaroo Island,2,55.4673939995,Breast
+40702,Limestone Coast,2,58.1233000907,Breast
+40703,Murray and Mallee,1,53.7860049469,Breast
+50101,Augusta - Margaret River - Busselton,4,52.4251169388,Breast
+50102,Bunbury,2,51.282379186,Breast
+50103,Manjimup,2,50.1813412048,Breast
+50201,Mandurah,2,52.6007957316,Breast
+50301,Cottesloe - Claremont,5,44.2289650804,Breast
+50302,Perth City,5,49.8947965006,Breast
+50401,Bayswater - Bassendean,3,51.4643849841,Breast
+50402,Mundaring,4,49.1384596652,Breast
+50403,Swan,3,46.3053927656,Breast
+50501,Joondalup,5,57.5958803344,Breast
+50502,Stirling,4,50.3012929145,Breast
+50503,Wanneroo,3,48.0074558403,Breast
+50601,Armadale,3,45.3857040012,Breast
+50602,Belmont - Victoria Park,3,45.8545212153,Breast
+50603,Canning,4,50.0509282115,Breast
+50604,Gosnells,2,44.2362934844,Breast
+50605,Kalamunda,4,50.5261390391,Breast
+50606,Serpentine - Jarrahdale,4,47.002229262,Breast
+50607,South Perth,5,50.094932087,Breast
+50701,Cockburn,4,50.9099908842,Breast
+50702,Fremantle,4,50.253244543,Breast
+50703,Kwinana,2,40.3237811686,Breast
+50704,Melville,5,52.9509882324,Breast
+50705,Rockingham,3,49.5665502425,Breast
+50901,Albany,2,46.4958449744,Breast
+50902,Wheat Belt - North,2,46.2891230788,Breast
+50903,Wheat Belt - South,3,50.9734200533,Breast
+51001,Kimberley,1,42.3810618249,Breast
+51002,East Pilbara,1,29.7993527768,Breast
+51003,West Pilbara,4,39.8906003114,Breast
+51101,Esperance,3,59.1286727457,Breast
+51102,Gascoyne,2,44.4363971502,Breast
+51103,Goldfields,2,37.9815909199,Breast
+51104,Mid West,2,50.0971980381,Breast
+60101,Brighton,1,56.4818778573,Breast
+60102,Hobart - North East,3,59.9189347919,Breast
+60103,Hobart - North West,1,50.3900306212,Breast
+60104,Hobart - South and West,4,61.5886797385,Breast
+60105,Hobart Inner,4,61.4655125858,Breast
+60106,Sorell - Dodges Ferry,3,55.4459964911,Breast
+60201,Launceston,2,61.6311475933,Breast
+60202,Meander Valley - West Tamar,2,55.7651418565,Breast
+60203,North East,1,58.2380828978,Breast
+60301,Central Highlands (Tas.),1,47.7146458591,Breast
+60302,Huon - Bruny Island,3,53.4565051753,Breast
+60303,South East Coast,1,57.3920552234,Breast
+60401,Burnie - Ulverstone,1,59.7730780236,Breast
+60402,Devonport,1,59.7978644584,Breast
+60403,West Coast,1,53.9390334534,Breast
+70101,Darwin City,5,45.3542666552,Breast
+70102,Darwin Suburbs,3,44.1933743244,Breast
+70103,Litchfield,4,37.3180769835,Breast
+70104,Palmerston,3,37.9200768592,Breast
+70201,Alice Springs,1,30.9568489744,Breast
+70202,Barkly,1,19.0746531647,Breast
+70203,Daly - Tiwi - West Arnhem,1,26.6444010264,Breast
+70204,East Arnhem,1,16.9013009194,Breast
+70205,Katherine,1,32.6386083568,Breast
+80101,Belconnen,5,56.5692980957,Breast
+80104,Gungahlin,5,53.8881469995,Breast
+80105,North Canberra,5,58.0736279153,Breast
+80106,South Canberra,5,58.6059048206,Breast
+80107,Tuggeranong,5,56.8188278455,Breast
+80109,Woden Valley,5,59.1126410404,Breast
+10102,Queanbeyan,5,77.2456392653,Cervical
+10103,Snowy Mountains,4,77.8862609873,Cervical
+10104,South Coast,3,80.346311703,Cervical
+10105,Goulburn - Mulwaree,2,70.8134135072,Cervical
+10106,Young - Yass,3,72.0055706924,Cervical
+10201,Gosford,4,79.7889660508,Cervical
+10202,Wyong,2,73.096667676,Cervical
+10301,Bathurst,3,76.5222975728,Cervical
+10302,Lachlan Valley,2,67.1659811512,Cervical
+10303,Lithgow - Mudgee,2,69.6923503263,Cervical
+10304,Orange,3,73.8912481685,Cervical
+10401,Clarence Valley,1,75.9438771929,Cervical
+10402,Coffs Harbour,2,78.0316405923,Cervical
+10501,Bourke - Cobar - Coonamble,1,73.1092082112,Cervical
+10502,Broken Hill and Far West,1,76.5315117344,Cervical
+10503,Dubbo,2,72.2678905978,Cervical
+10601,Lower Hunter,2,75.5018115056,Cervical
+10602,Maitland,3,75.3142745126,Cervical
+10603,Port Stephens,2,80.3713060563,Cervical
+10604,Upper Hunter,2,73.6254456577,Cervical
+10701,Dapto - Port Kembla,2,75.2328702126,Cervical
+10703,Kiama - Shellharbour,3,78.1279436407,Cervical
+10704,Wollongong,4,84.0882860651,Cervical
+10801,Great Lakes,1,72.9515809801,Cervical
+10802,Kempsey - Nambucca,1,74.596698454,Cervical
+10803,Lord Howe Island,5,76.0705228083,Cervical
+10804,Port Macquarie,3,82.44075181,Cervical
+10805,Taree - Gloucester,1,74.3676653641,Cervical
+10901,Albury,2,78.2282181668,Cervical
+10902,Lower Murray,2,69.8722504441,Cervical
+10903,Upper Murray exc. Albury,2,74.3468925104,Cervical
+11001,Armidale,3,77.7723724314,Cervical
+11002,Inverell - Tenterfield,1,69.8107939673,Cervical
+11003,Moree - Narrabri,2,68.0522322998,Cervical
+11004,Tamworth - Gunnedah,2,74.5153844949,Cervical
+11101,Lake Macquarie - East,3,82.4481859674,Cervical
+11102,Lake Macquarie - West,3,76.5689888696,Cervical
+11103,Newcastle,3,82.6882451042,Cervical
+11201,Richmond Valley - Coastal,3,89.3470896657,Cervical
+11202,Richmond Valley - Hinterland,1,75.2614640577,Cervical
+11203,Tweed Valley,3,83.2498362498,Cervical
+11301,Griffith - Murrumbidgee (West),2,67.5725530304,Cervical
+11302,Tumut - Tumbarumba,2,65.0549461694,Cervical
+11303,Wagga Wagga,2,74.55266438,Cervical
+11401,Shoalhaven,2,81.8379790219,Cervical
+11402,Southern Highlands,4,77.2595232146,Cervical
+11501,Baulkham Hills,5,81.277367733,Cervical
+11502,Dural - Wisemans Ferry,5,85.6973872834,Cervical
+11503,Hawkesbury,5,80.1630590516,Cervical
+11504,Rouse Hill - McGraths Hill,5,81.1769118092,Cervical
+11601,Blacktown,2,67.0163930505,Cervical
+11602,Blacktown - North,5,71.6084461978,Cervical
+11603,Mount Druitt,1,62.5739029477,Cervical
+11701,Botany,3,74.5480269584,Cervical
+11702,Marrickville - Sydenham - Petersham,4,84.0926574578,Cervical
+11703,Sydney Inner City,4,75.5559066589,Cervical
+11801,Eastern Suburbs - North,5,96.8054322167,Cervical
+11802,Eastern Suburbs - South,5,91.9131816932,Cervical
+11901,Bankstown,1,67.8600686617,Cervical
+11902,Canterbury,1,68.3405570871,Cervical
+11903,Hurstville,3,73.374931992,Cervical
+11904,Kogarah - Rockdale,3,71.3468717224,Cervical
+12001,Canada Bay,5,81.5568424624,Cervical
+12002,Leichhardt,5,93.0145151574,Cervical
+12003,Strathfield - Burwood - Ashfield,3,74.9269655545,Cervical
+12101,Chatswood - Lane Cove,5,82.9424985445,Cervical
+12102,Hornsby,5,80.0321807305,Cervical
+12103,Ku-ring-gai,5,87.3113637845,Cervical
+12104,North Sydney - Mosman,5,88.9971119898,Cervical
+12201,Manly,5,96.5856319747,Cervical
+12202,Pittwater,5,93.8592050287,Cervical
+12203,Warringah,5,88.1203337928,Cervical
+12301,Camden,4,74.1898159741,Cervical
+12302,Campbelltown (NSW),1,64.0709998978,Cervical
+12303,Wollondilly,4,76.8054781368,Cervical
+12401,Blue Mountains,4,79.2115774024,Cervical
+12403,Penrith,3,68.476805048,Cervical
+12404,Richmond - Windsor,3,76.3856254106,Cervical
+12405,St Marys,2,64.7201986617,Cervical
+12501,Auburn,1,69.052131857,Cervical
+12502,Carlingford,4,76.6409402816,Cervical
+12503,Merrylands - Guildford,1,67.2144392157,Cervical
+12504,Parramatta,4,66.9757362382,Cervical
+12601,Pennant Hills - Epping,5,81.3423998807,Cervical
+12602,Ryde - Hunters Hill,5,79.1345445817,Cervical
+12701,Bringelly - Green Valley,2,68.9270281501,Cervical
+12702,Fairfield,1,68.3717631055,Cervical
+12703,Liverpool,1,67.2190971906,Cervical
+12801,Cronulla - Miranda - Caringbah,5,83.882985707,Cervical
+12802,Sutherland - Menai - Heathcote,5,83.5841754231,Cervical
+20101,Ballarat,3,76.1364740522,Cervical
+20102,Creswick - Daylesford - Ballan,4,74.5587209506,Cervical
+20103,Maryborough - Pyrenees,1,68.1045452397,Cervical
+20201,Bendigo,2,79.6852395716,Cervical
+20202,Heathcote - Castlemaine - Kyneton,4,89.0666341216,Cervical
+20203,Loddon - Elmore,2,73.3451088873,Cervical
+20301,Barwon - West,4,82.8391389444,Cervical
+20302,Geelong,3,83.2231638066,Cervical
+20303,Surf Coast - Bellarine Peninsula,5,90.7126875109,Cervical
+20401,Upper Goulburn Valley,3,74.964204099,Cervical
+20402,Wangaratta - Benalla,3,83.7767374244,Cervical
+20403,Wodonga - Alpine,3,81.1645734509,Cervical
+20501,Baw Baw,3,79.5677311741,Cervical
+20502,Gippsland - East,2,76.8447754161,Cervical
+20503,Gippsland - South West,3,77.303359802,Cervical
+20504,Latrobe Valley,1,72.8472731044,Cervical
+20505,Wellington,2,76.1884231148,Cervical
+20601,Brunswick - Coburg,5,89.0586703535,Cervical
+20602,Darebin - South,5,92.79886914,Cervical
+20603,Essendon,4,83.4310326641,Cervical
+20604,Melbourne City,4,68.2400165158,Cervical
+20605,Port Phillip,5,87.1445931654,Cervical
+20606,Stonnington - West,5,88.6201103143,Cervical
+20607,Yarra,4,89.2868932233,Cervical
+20701,Boroondara,5,89.7398441726,Cervical
+20702,Manningham - West,4,79.5388203915,Cervical
+20703,Whitehorse - West,4,78.861535839,Cervical
+20801,Bayside,5,95.6667528294,Cervical
+20802,Glen Eira,5,84.0088200007,Cervical
+20803,Kingston,5,83.7733166782,Cervical
+20804,Stonnington - East,5,90.0017482247,Cervical
+20901,Banyule,5,87.58081988,Cervical
+20902,Darebin - North,3,78.7533150283,Cervical
+20903,Nillumbik - Kinglake,5,93.8318459627,Cervical
+20904,Whittlesea - Wallan,3,71.886274121,Cervical
+21001,Keilor,4,80.5560335508,Cervical
+21002,Macedon Ranges,5,87.6505307148,Cervical
+21003,Moreland - North,3,77.7568106926,Cervical
+21004,Sunbury,4,78.3659897708,Cervical
+21005,Tullamarine - Broadmeadows,1,68.2554277982,Cervical
+21101,Knox,4,78.1718267051,Cervical
+21102,Manningham - East,5,90.3358810901,Cervical
+21103,Maroondah,4,81.1552379829,Cervical
+21104,Whitehorse - East,4,80.4854511161,Cervical
+21105,Yarra Ranges,4,81.1770501675,Cervical
+21201,Cardinia,4,73.2757557796,Cervical
+21202,Casey - North,3,76.1916322152,Cervical
+21203,Casey - South,3,72.6573425665,Cervical
+21204,Dandenong,1,71.6782252639,Cervical
+21205,Monash,4,77.1383474205,Cervical
+21301,Brimbank,1,73.1815407381,Cervical
+21302,Hobsons Bay,4,82.4184938389,Cervical
+21303,Maribyrnong,3,81.5547611292,Cervical
+21304,Melton - Bacchus Marsh,3,74.1270742771,Cervical
+21305,Wyndham,3,71.9153966207,Cervical
+21401,Frankston,3,77.0286523504,Cervical
+21402,Mornington Peninsula,4,82.0764905052,Cervical
+21501,Grampians,2,68.2625753324,Cervical
+21502,Mildura,1,75.3127640893,Cervical
+21503,Murray River - Swan Hill,1,75.4320360574,Cervical
+21601,Campaspe,2,76.6668050023,Cervical
+21602,Moira,2,74.2340892456,Cervical
+21603,Shepparton,1,75.5208649619,Cervical
+21701,Glenelg - Southern Grampians,2,73.738817447,Cervical
+21703,Colac - Corangamite,2,80.2412442411,Cervical
+21704,Warrnambool,3,82.4600819286,Cervical
+30101,Capalaba,4,81.5861787872,Cervical
+30102,Cleveland - Stradbroke,4,79.9847098415,Cervical
+30103,Wynnum - Manly,4,84.0229234088,Cervical
+30201,Bald Hills - Everton Park,5,82.7103907673,Cervical
+30202,Chermside,4,81.7688581366,Cervical
+30203,Nundah,4,79.1612207214,Cervical
+30204,Sandgate,3,77.675538453,Cervical
+30301,Carindale,5,86.1267835131,Cervical
+30302,Holland Park - Yeronga,5,85.2417748367,Cervical
+30303,Mt Gravatt,4,79.007054965,Cervical
+30304,Nathan,4,81.5343656591,Cervical
+30305,Rocklea - Acacia Ridge,3,75.0836618862,Cervical
+30306,Sunnybank,3,71.9613295894,Cervical
+30401,Centenary,5,83.6832924869,Cervical
+30402,Kenmore - Brookfield - Moggill,5,88.1098183672,Cervical
+30403,Sherwood - Indooroopilly,5,84.5765148671,Cervical
+30404,The Gap - Enoggera,5,87.2453170921,Cervical
+30501,Brisbane Inner,4,78.5855454091,Cervical
+30502,Brisbane Inner - East,5,87.738589106,Cervical
+30503,Brisbane Inner - North,5,86.8818116336,Cervical
+30504,Brisbane Inner - West,5,92.6623578458,Cervical
+30601,Cairns - North,4,86.3380381431,Cervical
+30602,Cairns - South,1,80.9771428017,Cervical
+30603,Innisfail - Cassowary Coast,1,74.1919658092,Cervical
+30604,Port Douglas - Daintree,2,80.0953033852,Cervical
+30605,Tablelands (East) - Kuranda,1,81.9647474149,Cervical
+30701,Darling Downs (West) - Maranoa,2,71.9403541696,Cervical
+30702,Darling Downs - East,2,71.9759877787,Cervical
+30703,Granite Belt,1,69.5488950379,Cervical
+30801,Central Highlands (Qld),2,64.0778707578,Cervical
+30803,Rockhampton,2,74.5971231175,Cervical
+30804,Biloela,3,69.6462728454,Cervical
+30805,Gladstone,2,71.5925736207,Cervical
+30901,Broadbeach - Burleigh,4,91.6172281367,Cervical
+30902,Coolangatta,4,88.4052645206,Cervical
+30903,Gold Coast - North,3,77.8940053853,Cervical
+30904,Gold Coast Hinterland,4,84.8297945711,Cervical
+30905,Mudgeeraba - Tallebudgera,5,85.6357990151,Cervical
+30906,Nerang,4,78.3413476432,Cervical
+30907,Ormeau - Oxenford,4,76.526978281,Cervical
+30908,Robina,4,83.9115887857,Cervical
+30909,Southport,2,74.6602471392,Cervical
+30910,Surfers Paradise,3,75.9256642395,Cervical
+31001,Forest Lake - Oxley,1,75.201613211,Cervical
+31002,Ipswich Hinterland,2,72.9464337017,Cervical
+31003,Ipswich Inner,2,72.5257740795,Cervical
+31004,Springfield - Redbank,2,70.1355687119,Cervical
+31101,Beaudesert,1,80.2157900467,Cervical
+31102,Beenleigh,1,66.4878092844,Cervical
+31103,Browns Plains,1,69.0280064319,Cervical
+31104,Jimboomba,3,74.1317893012,Cervical
+31105,Loganlea - Carbrook,2,71.5361420707,Cervical
+31106,Springwood - Kingston,1,70.1353422154,Cervical
+31201,Bowen Basin - North,2,63.2176591275,Cervical
+31202,Mackay,3,80.6826710697,Cervical
+31203,Whitsunday,3,76.1297843122,Cervical
+31301,Bribie - Beachmere,2,69.3727603052,Cervical
+31302,Caboolture,1,66.110674873,Cervical
+31303,Caboolture Hinterland,2,74.8305162809,Cervical
+31304,Narangba - Burpengary,2,72.4915623569,Cervical
+31305,Redcliffe,2,72.294193798,Cervical
+31401,The Hills District,5,84.4932574112,Cervical
+31402,North Lakes,3,72.2206956516,Cervical
+31403,Strathpine,2,74.7897105659,Cervical
+31501,Far North,1,87.5680889138,Cervical
+31502,Outback - North,1,72.0302791218,Cervical
+31503,Outback - South,2,79.8761892137,Cervical
+31601,Buderim,4,85.178726794,Cervical
+31602,Caloundra,4,83.0195123649,Cervical
+31603,Maroochy,4,82.9843821422,Cervical
+31605,Noosa,4,86.3298397938,Cervical
+31606,Sunshine Coast Hinterland,4,81.3643874163,Cervical
+31607,Nambour,3,82.7671463133,Cervical
+31608,Noosa Hinterland,4,84.715431203,Cervical
+31701,Toowoomba,2,74.4201448357,Cervical
+31801,Charters Towers - Ayr - Ingham,1,70.8236024171,Cervical
+31802,Townsville,3,79.5930436651,Cervical
+31901,Bundaberg,1,74.1252106327,Cervical
+31902,Burnett,1,66.8532072991,Cervical
+31903,Gympie - Cooloola,1,75.861912091,Cervical
+31904,Hervey Bay,1,74.1277000937,Cervical
+31905,Maryborough,1,68.5171182168,Cervical
+40101,Adelaide City,3,82.0412966425,Cervical
+40102,Adelaide Hills,5,89.0677208358,Cervical
+40103,Burnside,5,88.514708951,Cervical
+40104,Campbelltown (SA),4,78.8726842183,Cervical
+40105,Norwood - Payneham - St Peters,4,83.7924916339,Cervical
+40106,Prospect - Walkerville,5,82.2218799534,Cervical
+40107,Unley,5,86.998789695,Cervical
+40201,Gawler - Two Wells,3,75.7066562928,Cervical
+40202,Playford,1,66.2124241847,Cervical
+40203,Port Adelaide - East,2,76.0549468076,Cervical
+40204,Salisbury,1,73.7178801304,Cervical
+40205,Tea Tree Gully,4,78.1830885839,Cervical
+40301,Holdfast Bay,4,84.1601603608,Cervical
+40302,Marion,3,79.1463091198,Cervical
+40303,Mitcham,5,87.589597637,Cervical
+40304,Onkaparinga,3,77.8720390471,Cervical
+40401,Charles Sturt,3,79.1817975587,Cervical
+40402,Port Adelaide - West,1,74.8725370553,Cervical
+40403,West Torrens,4,79.3422411863,Cervical
+40501,Barossa,3,80.2760469453,Cervical
+40502,Lower North,2,75.9515679428,Cervical
+40503,Mid North,1,66.3245434619,Cervical
+40504,Yorke Peninsula,1,68.4323215157,Cervical
+40601,Eyre Peninsula and South West,1,76.2462120429,Cervical
+40602,Outback - North and East,1,62.1072323103,Cervical
+40701,Fleurieu - Kangaroo Island,2,76.1412712998,Cervical
+40702,Limestone Coast,2,73.636054247,Cervical
+40703,Murray and Mallee,1,72.6947264323,Cervical
+50101,Augusta - Margaret River - Busselton,4,85.3893178044,Cervical
+50102,Bunbury,2,72.9733952433,Cervical
+50103,Manjimup,2,69.1597875066,Cervical
+50201,Mandurah,2,73.9709219613,Cervical
+50301,Cottesloe - Claremont,5,92.9106586744,Cervical
+50302,Perth City,5,84.4249321447,Cervical
+50401,Bayswater - Bassendean,3,79.0571147095,Cervical
+50402,Mundaring,4,79.4415584505,Cervical
+50403,Swan,3,75.181810859,Cervical
+50501,Joondalup,5,84.3939890807,Cervical
+50502,Stirling,4,80.9755492389,Cervical
+50503,Wanneroo,3,77.4001688472,Cervical
+50601,Armadale,3,74.5751443208,Cervical
+50602,Belmont - Victoria Park,3,74.4780540165,Cervical
+50603,Canning,4,77.4946800076,Cervical
+50604,Gosnells,2,71.6054896045,Cervical
+50605,Kalamunda,4,78.2218856902,Cervical
+50606,Serpentine - Jarrahdale,4,76.6381144105,Cervical
+50607,South Perth,5,81.5816995034,Cervical
+50701,Cockburn,4,82.0527757739,Cervical
+50702,Fremantle,4,94.377450722,Cervical
+50703,Kwinana,2,74.4025525232,Cervical
+50704,Melville,5,85.7532477448,Cervical
+50705,Rockingham,3,73.7265756084,Cervical
+50901,Albany,2,75.2932088783,Cervical
+50902,Wheat Belt - North,2,67.0429111874,Cervical
+50903,Wheat Belt - South,3,68.6761199582,Cervical
+51001,Kimberley,1,71.1415916749,Cervical
+51002,East Pilbara,1,58.2538223115,Cervical
+51003,West Pilbara,4,66.0742803541,Cervical
+51101,Esperance,3,73.0079463336,Cervical
+51102,Gascoyne,2,63.2237268621,Cervical
+51103,Goldfields,2,64.1549054824,Cervical
+51104,Mid West,2,76.9866143246,Cervical
+60101,Brighton,1,76.2769119158,Cervical
+60102,Hobart - North East,3,82.0490650825,Cervical
+60103,Hobart - North West,1,77.1084401003,Cervical
+60104,Hobart - South and West,4,83.6296324673,Cervical
+60105,Hobart Inner,4,82.3385512197,Cervical
+60106,Sorell - Dodges Ferry,3,76.4992130883,Cervical
+60201,Launceston,2,77.9735531485,Cervical
+60202,Meander Valley - West Tamar,2,74.739024279,Cervical
+60203,North East,1,74.6178784398,Cervical
+60301,Central Highlands (Tas.),1,74.4826857099,Cervical
+60302,Huon - Bruny Island,3,80.5685481966,Cervical
+60303,South East Coast,1,76.0430441124,Cervical
+60401,Burnie - Ulverstone,1,76.218657488,Cervical
+60402,Devonport,1,72.738948857,Cervical
+60403,West Coast,1,69.3547263921,Cervical
+70101,Darwin City,5,80.7615878702,Cervical
+70102,Darwin Suburbs,3,78.6476086388,Cervical
+70103,Litchfield,4,77.4402864641,Cervical
+70104,Palmerston,3,77.2559543209,Cervical
+70201,Alice Springs,1,78.7017509319,Cervical
+70202,Barkly,1,72.9519456517,Cervical
+70203,Daly - Tiwi - West Arnhem,1,71.0104012896,Cervical
+70204,East Arnhem,1,79.0569494539,Cervical
+70205,Katherine,1,76.8342806426,Cervical
+80101,Belconnen,5,77.604632779,Cervical
+80103,Canberra East,1,63.2863988213,Cervical
+80104,Gungahlin,5,73.918007469,Cervical
+80105,North Canberra,5,89.9077282087,Cervical
+80106,South Canberra,5,84.7653365105,Cervical
+80107,Tuggeranong,5,78.011675515,Cervical
+80108,Weston Creek,5,80.9247179236,Cervical
+80109,Woden Valley,5,81.0843694037,Cervical
+80110,Molonglo,5,81.0007769942,Cervical
+80111,Uriarra - Namadgi,5,76.7211069783,Cervical

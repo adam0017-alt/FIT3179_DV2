@@ -1,0 +1,137 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/activity_monthly.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.program=='Bowel (kits returned)'"
+    }
+  ],
+  "width": "container",
+  "height": 240,
+  "title": {
+    "text": "Bowel kits returned each month (Australia)",
+    "anchor": "start",
+    "fontSize": 14,
+    "fontWeight": "bold",
+    "offset": 8
+  },
+  "mark": {
+    "type": "rect",
+    "stroke": "#faf6ef",
+    "strokeWidth": 1.5
+  },
+  "encoding": {
+    "x": {
+      "field": "month_num",
+      "type": "ordinal",
+      "sort": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "title": null,
+      "axis": {
+        "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][datum.value-1]",
+        "orient": "top",
+        "labelAngle": 0,
+        "ticks": false,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "ticks": false,
+        "domain": false,
+        "labelPadding": 6
+      }
+    },
+    "color": {
+      "field": "count",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "oranges"
+      },
+      "legend": {
+        "title": "People",
+        "format": "~s",
+        "orient": "right",
+        "gradientLength": 150
+      }
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "title": "Year"
+      },
+      {
+        "field": "month",
+        "title": "Month"
+      },
+      {
+        "field": "count",
+        "title": "Count",
+        "format": ","
+      }
+    ]
+  },
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  },
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  }
+}

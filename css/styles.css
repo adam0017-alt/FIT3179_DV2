@@ -1,0 +1,59 @@
+/* Who gets screened? FIT3179 Data Visualisation 2 */
+:root{
+  --paper:#faf6ef; --ink:#2b2a28; --muted:#6b665e; --rule:#e2dbcd;
+  --bowel:#b4551d; --breast:#c23b78; --cervical:#1f8a7e; --accent:#0b5a50;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:1.6}
+h1,h2,h3{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.02em;margin:0 0 .5em}
+.page{max-width:1080px;margin:0 auto;padding:0 20px 40px}
+/* hero */
+.hero{padding:56px 0 28px;border-bottom:3px solid var(--ink)}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 14px}
+.hero h1{font-size:clamp(36px,6.4vw,68px);letter-spacing:-.035em;max-width:18ch}
+.hero .lede{font-size:clamp(19px,2.4vw,23px);max-width:46ch;color:#3d3b37;margin:0 0 6px}
+.byline{font-size:14px;color:var(--muted);margin-top:18px}
+/* sections */
+section.story{padding:44px 0 12px;border-bottom:1px solid var(--rule)}
+.sec-num{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 8px}
+section.story h2{font-size:clamp(26px,3.6vw,38px);max-width:22ch}
+.text{max-width:34em}
+.text p{margin:0 0 1em}
+.pure-g>div{padding:0}
+.col-text{padding-right:28px !important}
+.col-vis{min-width:0}
+.vis{width:100%}
+.vis-wide{margin:12px 0 24px}
+figure{margin:18px 0 26px}
+figcaption{font-size:14px;color:var(--muted);line-height:1.45;margin-top:8px;max-width:60em}
+.fig-title{font-weight:700;font-size:16px;margin:0 0 2px}
+.fig-sub{font-size:14px;color:var(--muted);margin:0 0 8px}
+.callout{border-left:4px solid var(--accent);background:#f1ece1;padding:12px 16px;margin:18px 0;font-size:17px;max-width:34em}
+.callout b{color:var(--accent)}
+.stat{display:inline-block;margin-right:28px}
+.stat .n{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:44px;font-weight:700;line-height:1}
+.stat .l{font-size:14px;color:var(--muted)}
+.tag-bowel{color:var(--bowel);font-weight:700}.tag-breast{color:var(--breast);font-weight:700}.tag-cervical{color:var(--cervical);font-weight:700}
+.legend-row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+details{margin:10px 0;font-size:15px}
+summary{cursor:pointer;color:var(--accent);font-weight:600}
+/* footer */
+footer{padding:36px 0 10px;font-size:14px;color:var(--muted)}
+footer h2{font-size:22px;color:var(--ink)}
+footer ul{padding-left:1.1em;margin:.4em 0 1em}
+footer li{margin-bottom:.35em}
+a{color:var(--accent)}
+.vega-embed{width:100%}
+.vega-embed details,.vega-embed summary{display:none}
+.vega-actions{display:none !important}
+@media(max-width:800px){
+  .pure-u-md-1-2,.pure-u-md-2-5,.pure-u-md-3-5{width:100% !important}
+  .col-text{padding-right:0 !important}
+  body{font-size:17px}
+}
+
+#vis-scatter{overflow-x:auto;max-width:100%}
+.vis{overflow-x:auto;max-width:100%}
+.vega-bindings{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;color:#6b665e;margin-top:8px}
+.vega-bind select{font:inherit;padding:2px 6px}

@@ -1,0 +1,367 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/sa3_metrics.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "sa3_code": "string",
+        "lon": "number",
+        "lat": "number",
+        "bowel_rate": "number",
+        "bowel_rate_1819": "number",
+        "bowel_invited": "number",
+        "bowel_participated": "number",
+        "breast_rate": "number",
+        "cervical_rate": "number",
+        "irsd": "number",
+        "irsd_quintile": "number",
+        "population": "number",
+        "bowel_change": "number",
+        "bowel_unscreened": "number",
+        "x_adv": "number",
+        "y_rate": "number"
+      }
+    }
+  },
+  "padding": {
+    "left": 5,
+    "right": 30,
+    "top": 5,
+    "bottom": 5
+  },
+  "width": 780,
+  "height": 400,
+  "params": [
+    {
+      "name": "state_pick",
+      "value": "All states",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All states",
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "Western Australia",
+          "South Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ],
+        "name": "Highlight a state: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "color": "#b4551d"
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "test": "state_pick=='All states' || datum.state==state_pick",
+            "value": 0.7
+          },
+          "value": 0.08
+        },
+        "x": {
+          "field": "irsd",
+          "type": "quantitative",
+          "scale": {
+            "zero": false
+          },
+          "axis": {
+            "tickCount": 8,
+            "format": "d"
+          },
+          "title": "Area advantage score (higher = more advantaged)"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              60
+            ]
+          },
+          "title": "Share of people screened for bowel cancer (%)"
+        },
+        "size": {
+          "field": "bowel_invited",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              20,
+              500
+            ]
+          },
+          "legend": {
+            "title": "Invited",
+            "format": ",.0f",
+            "values": [
+              10000,
+              30000,
+              50000
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "sa3_name",
+            "title": "Area"
+          },
+          {
+            "field": "state",
+            "title": "State"
+          },
+          {
+            "field": "bowel_rate",
+            "title": "Screened (%)",
+            "format": ".1f"
+          },
+          {
+            "field": "irsd",
+            "title": "Advantage score",
+            "format": ".0f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "irsd": 611.4,
+            "bowel_rate": 20.33
+          },
+          {
+            "irsd": 1109.3,
+            "bowel_rate": 46.1
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#2b2a28",
+        "strokeDash": [
+          5,
+          4
+        ],
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "irsd",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "sa3_name",
+            "oneOf": [
+              "East Arnhem",
+              "Barkly",
+              "Holdfast Bay",
+              "Fairfield",
+              "Daly - Tiwi - West Arnhem"
+            ]
+          }
+        },
+        {
+          "filter": "datum.irsd <= 1000"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 11,
+        "fill": "#faf6ef",
+        "stroke": "#faf6ef",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "irsd",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "sa3_name"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "sa3_name",
+            "oneOf": [
+              "East Arnhem",
+              "Barkly",
+              "Holdfast Bay",
+              "Fairfield",
+              "Daly - Tiwi - West Arnhem"
+            ]
+          }
+        },
+        {
+          "filter": "datum.irsd <= 1000"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 11,
+        "fill": "#2b2a28"
+      },
+      "encoding": {
+        "x": {
+          "field": "irsd",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "sa3_name"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "sa3_name",
+            "oneOf": [
+              "East Arnhem",
+              "Barkly",
+              "Holdfast Bay",
+              "Fairfield",
+              "Daly - Tiwi - West Arnhem"
+            ]
+          }
+        },
+        {
+          "filter": "datum.irsd > 1000"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "fontSize": 11,
+        "fill": "#faf6ef",
+        "stroke": "#faf6ef",
+        "strokeWidth": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "irsd",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "sa3_name"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "sa3_name",
+            "oneOf": [
+              "East Arnhem",
+              "Barkly",
+              "Holdfast Bay",
+              "Fairfield",
+              "Daly - Tiwi - West Arnhem"
+            ]
+          }
+        },
+        {
+          "filter": "datum.irsd > 1000"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -8,
+        "fontSize": 11,
+        "fill": "#2b2a28"
+      },
+      "encoding": {
+        "x": {
+          "field": "irsd",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "bowel_rate",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "sa3_name"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  }
+}

@@ -1,0 +1,318 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "width": 420,
+      "height": 380,
+      "projection": {
+        "type": "mercator"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "breast_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.breast_rate) ? 'No figure' : datum.breast_rate < 40 ? 'Under 40%' : datum.breast_rate < 45 ? '40\u201345%' : datum.breast_rate < 50 ? '45\u201350%' : datum.breast_rate < 55 ? '50\u201355%' : datum.breast_rate < 60 ? '55\u201360%' : '60% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 40%",
+                  "40\u201345%",
+                  "45\u201350%",
+                  "50\u201355%",
+                  "55\u201360%",
+                  "60% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": {
+                "title": "People screened",
+                "orient": "bottom-left",
+                "offset": -4,
+                "symbolType": "square",
+                "symbolSize": 180,
+                "symbolStrokeWidth": 0
+              }
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "breast_rate",
+                "title": "Breast screening, 2023\u201324 (women 50\u201374)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8
+          }
+        }
+      ],
+      "title": {
+        "text": "Breast screening, 2023\u201324 (women 50\u201374)",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "width": 420,
+      "height": 380,
+      "projection": {
+        "type": "mercator"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "cervical_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.cervical_rate) ? 'No figure' : datum.cervical_rate < 65 ? 'Under 65%' : datum.cervical_rate < 70 ? '65\u201370%' : datum.cervical_rate < 75 ? '70\u201375%' : datum.cervical_rate < 80 ? '75\u201380%' : datum.cervical_rate < 85 ? '80\u201385%' : '85% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 65%",
+                  "65\u201370%",
+                  "70\u201375%",
+                  "75\u201380%",
+                  "80\u201385%",
+                  "85% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": {
+                "title": "People screened",
+                "orient": "bottom-left",
+                "offset": -4,
+                "symbolType": "square",
+                "symbolSize": 180,
+                "symbolStrokeWidth": 0
+              }
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "cervical_rate",
+                "title": "Cervical screening, 2020\u20132024 (people 25\u201374)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8
+          }
+        }
+      ],
+      "title": {
+        "text": "Cervical screening, 2020\u20132024 (people 25\u201374)",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    }
+  ],
+  "spacing": 20,
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  }
+}
