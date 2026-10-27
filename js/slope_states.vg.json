@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "padding": {
-    "left": 125,
-    "right": 40,
+    "left": 190,
+    "right": 110,
     "top": 5,
     "bottom": 5
   },
@@ -15,8 +15,26 @@
       }
     }
   },
-  "width": 300,
+  "width": 260,
   "height": 460,
+  "transform": [
+    {
+      "calculate": "datum.year=='2023\u201324' ? datum.rate : -datum.rate",
+      "as": "signed"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "signed",
+          "as": "chg"
+        }
+      ],
+      "groupby": [
+        "state"
+      ]
+    }
+  ],
   "encoding": {
     "x": {
       "field": "year",
@@ -30,7 +48,7 @@
         "domain": false
       },
       "scale": {
-        "padding": 0.6
+        "padding": 0.1
       }
     },
     "y": {
@@ -74,7 +92,8 @@
           },
           {
             "field": "rate",
-            "title": "Screened (%)"
+            "title": "Screened (% of invited)",
+            "format": ".1f"
           }
         ]
       }
@@ -98,6 +117,10 @@
       "transform": [
         {
           "filter": "datum.year=='2014\u201315'"
+        },
+        {
+          "calculate": "datum.state + '  ' + format(datum.rate,'.1f')",
+          "as": "lbl"
         }
       ],
       "mark": {
@@ -109,7 +132,7 @@
       },
       "encoding": {
         "text": {
-          "field": "state"
+          "field": "lbl"
         }
       }
     },
@@ -117,6 +140,10 @@
       "transform": [
         {
           "filter": "datum.year=='2023\u201324'"
+        },
+        {
+          "calculate": "format(datum.rate,'.1f') + '  (' + format(datum.chg,'+.1f') + ')'",
+          "as": "lbl"
         }
       ],
       "mark": {
@@ -128,8 +155,7 @@
       },
       "encoding": {
         "text": {
-          "field": "rate",
-          "format": ".1f"
+          "field": "lbl"
         }
       }
     }

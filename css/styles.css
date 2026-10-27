@@ -26,9 +26,9 @@ section.story h2{font-size:clamp(26px,3.6vw,38px);max-width:22ch}
 .vis{width:100%}
 .vis-wide{margin:12px 0 24px}
 figure{margin:18px 0 26px}
-figcaption{font-size:14px;color:var(--muted);line-height:1.45;margin-top:8px;max-width:60em}
+figcaption{font-size:14px;color:var(--muted);line-height:1.45;margin-top:8px;max-width:30em}
 .fig-title{font-weight:700;font-size:16px;margin:0 0 2px}
-.fig-sub{font-size:14px;color:var(--muted);margin:0 0 8px}
+.fig-sub{font-size:14px;color:var(--muted);margin:0 0 8px;max-width:34em}
 .callout{border-left:4px solid var(--accent);background:#f1ece1;padding:12px 16px;margin:18px 0;font-size:17px;max-width:34em}
 .callout b{color:var(--accent)}
 .stat{display:inline-block;margin-right:28px}

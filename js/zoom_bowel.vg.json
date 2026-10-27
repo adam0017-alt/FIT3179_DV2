@@ -1,0 +1,597 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "width": 240,
+      "height": 240,
+      "projection": {
+        "type": "mercator",
+        "center": [
+          151.0,
+          -33.85
+        ],
+        "scale": 14000.0,
+        "translate": [
+          120.0,
+          120.0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "bowel_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.bowel_rate) ? 'No figure' : datum.bowel_rate < 30 ? 'Under 30%' : datum.bowel_rate < 35 ? '30\u201335%' : datum.bowel_rate < 40 ? '35\u201340%' : datum.bowel_rate < 45 ? '40\u201345%' : datum.bowel_rate < 50 ? '45\u201350%' : '50% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3,
+            "clip": true
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 30%",
+                  "30\u201335%",
+                  "35\u201340%",
+                  "40\u201345%",
+                  "45\u201350%",
+                  "50% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "bowel_rate",
+                "title": "Bowel screening participation (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8,
+            "clip": true
+          }
+        }
+      ],
+      "title": {
+        "text": "Sydney",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "width": 240,
+      "height": 240,
+      "projection": {
+        "type": "mercator",
+        "center": [
+          145.0,
+          -37.85
+        ],
+        "scale": 14000.0,
+        "translate": [
+          120.0,
+          120.0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "bowel_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.bowel_rate) ? 'No figure' : datum.bowel_rate < 30 ? 'Under 30%' : datum.bowel_rate < 35 ? '30\u201335%' : datum.bowel_rate < 40 ? '35\u201340%' : datum.bowel_rate < 45 ? '40\u201345%' : datum.bowel_rate < 50 ? '45\u201350%' : '50% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3,
+            "clip": true
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 30%",
+                  "30\u201335%",
+                  "35\u201340%",
+                  "40\u201345%",
+                  "45\u201350%",
+                  "50% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "bowel_rate",
+                "title": "Bowel screening participation (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8,
+            "clip": true
+          }
+        }
+      ],
+      "title": {
+        "text": "Melbourne",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "width": 240,
+      "height": 240,
+      "projection": {
+        "type": "mercator",
+        "center": [
+          153.0,
+          -27.6
+        ],
+        "scale": 8500.0,
+        "translate": [
+          120.0,
+          120.0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "bowel_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.bowel_rate) ? 'No figure' : datum.bowel_rate < 30 ? 'Under 30%' : datum.bowel_rate < 35 ? '30\u201335%' : datum.bowel_rate < 40 ? '35\u201340%' : datum.bowel_rate < 45 ? '40\u201345%' : datum.bowel_rate < 50 ? '45\u201350%' : '50% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3,
+            "clip": true
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 30%",
+                  "30\u201335%",
+                  "35\u201340%",
+                  "40\u201345%",
+                  "45\u201350%",
+                  "50% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "bowel_rate",
+                "title": "Bowel screening participation (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8,
+            "clip": true
+          }
+        }
+      ],
+      "title": {
+        "text": "South-east Queensland",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    },
+    {
+      "width": 240,
+      "height": 240,
+      "projection": {
+        "type": "mercator",
+        "center": [
+          115.9,
+          -32.0
+        ],
+        "scale": 11000.0,
+        "translate": [
+          120.0,
+          120.0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/sa3_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "sa3_2021"
+            }
+          },
+          "transform": [
+            {
+              "lookup": "properties.sa3_code",
+              "from": {
+                "data": {
+                  "url": "data/sa3_metrics.csv",
+                  "format": {
+                    "type": "csv",
+                    "parse": {
+                      "sa3_code": "string",
+                      "lon": "number",
+                      "lat": "number",
+                      "bowel_rate": "number",
+                      "bowel_rate_1819": "number",
+                      "bowel_invited": "number",
+                      "bowel_participated": "number",
+                      "breast_rate": "number",
+                      "cervical_rate": "number",
+                      "irsd": "number",
+                      "irsd_quintile": "number",
+                      "population": "number",
+                      "bowel_change": "number",
+                      "bowel_unscreened": "number",
+                      "x_adv": "number",
+                      "y_rate": "number"
+                    }
+                  }
+                },
+                "key": "sa3_code",
+                "fields": [
+                  "sa3_name",
+                  "state",
+                  "bowel_rate"
+                ]
+              }
+            },
+            {
+              "calculate": "!isValid(datum.bowel_rate) ? 'No figure' : datum.bowel_rate < 30 ? 'Under 30%' : datum.bowel_rate < 35 ? '30\u201335%' : datum.bowel_rate < 40 ? '35\u201340%' : datum.bowel_rate < 45 ? '40\u201345%' : datum.bowel_rate < 50 ? '45\u201350%' : '50% or more'",
+              "as": "cls"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "white",
+            "strokeWidth": 0.3,
+            "clip": true
+          },
+          "encoding": {
+            "color": {
+              "field": "cls",
+              "type": "ordinal",
+              "scale": {
+                "domain": [
+                  "Under 30%",
+                  "30\u201335%",
+                  "35\u201340%",
+                  "40\u201345%",
+                  "45\u201350%",
+                  "50% or more",
+                  "No figure"
+                ],
+                "range": [
+                  "#e6f3f0",
+                  "#b9e0d9",
+                  "#83cbbf",
+                  "#46ad9f",
+                  "#1f8576",
+                  "#0b5a50",
+                  "#e3ded4"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "sa3_name",
+                "title": "Area"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "bowel_rate",
+                "title": "Bowel screening participation (%)",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states_2021.topojson",
+            "format": {
+              "type": "topojson",
+              "feature": "states_2021"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "#6b665e",
+            "strokeWidth": 0.8,
+            "clip": true
+          }
+        }
+      ],
+      "title": {
+        "text": "Perth",
+        "anchor": "start",
+        "fontSize": 14,
+        "fontWeight": "bold"
+      }
+    }
+  ],
+  "spacing": 16,
+  "config": {
+    "background": null,
+    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal",
+      "gridColor": "#e7e1d6",
+      "domainColor": "#b8b0a2",
+      "tickColor": "#b8b0a2"
+    },
+    "legend": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#6b665e",
+      "titleColor": "#6b665e",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "titleFontWeight": "normal"
+    },
+    "header": {
+      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "labelColor": "#2b2a28",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
+    },
+    "title": {
+      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+      "color": "#2b2a28"
+    }
+  }
+}

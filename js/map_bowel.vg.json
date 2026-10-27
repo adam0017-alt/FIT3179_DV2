@@ -86,8 +86,8 @@
           },
           "legend": {
             "title": "People screened",
-            "orient": "bottom-left",
-            "offset": -4,
+            "orient": "right",
+            "offset": 8,
             "symbolType": "square",
             "symbolSize": 180,
             "symbolStrokeWidth": 0

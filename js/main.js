@@ -14,6 +14,9 @@ const specs = {
   'vis-legend-bivar': 'js/legend_bivariate.vg.json',
   'vis-box': 'js/boxplot_quintile.vg.json',
   'vis-lollipop': 'js/lollipop_extremes.vg.json',
+  'vis-zoom-bowel': 'js/zoom_bowel.vg.json',
+  'vis-zoom-change': 'js/zoom_change.vg.json',
+  'vis-zoom-bivar': 'js/zoom_bivar.vg.json',
   'vis-slope': 'js/slope_states.vg.json',
   'vis-scatter': 'js/scatter_bowel.vg.json'
 };

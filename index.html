@@ -22,7 +22,7 @@
     <p class="kicker">Preventive health in Australia</p>
     <h1>Who gets screened for cancer?</h1>
     <p class="lede">Bowel, breast and cervical cancers are much easier to treat when they are found early. Every year Australians are invited to check. This page shows who takes up the offer, where, and who is being missed.</p>
-    <p class="byline">By Adam &middot; FIT3179 Data Visualisation 2, Monash University &middot; October 2026</p>
+    <p class="byline">By Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2, Monash University &middot; 22 October 2026</p>
   </header>
 
   <!-- 1 -->
@@ -93,6 +93,8 @@
       <p class="fig-title">Bowel screening ranges from about 1 in 10 to more than 1 in 2</p>
       <p class="fig-sub">Share of invited people aged 50&ndash;74 who returned a kit, 2023&ndash;24. Grey areas have no published figure.</p>
       <div id="vis-map-bowel" class="vis"></div>
+      <p class="fig-sub" style="margin-top:14px"><b>Zoomed in:</b> the big cities, same colours as the map above.</p>
+      <div id="vis-zoom-bowel" class="vis"></div>
       <figcaption>The lowest rates are in the Northern Territory: East Arnhem (10%), Barkly (12%) and Daly &ndash; Tiwi &ndash; West Arnhem (16%). The highest are Holdfast Bay in South Australia (57%) and Surf Coast &ndash; Bellarine Peninsula in Victoria (56%). Source: AIHW; boundaries: ABS ASGS 2021.</figcaption>
     </figure>
 
@@ -107,7 +109,7 @@
     <div class="text"><p>Rates are only half the story. A small rural area can have a low rate and few people. The next map shows where the most people are being missed, in numbers.</p></div>
     <figure class="vis-wide">
       <p class="fig-title">Where the most people were invited but did not screen</p>
-      <p class="fig-sub">Circle size is the number of invited people who did not return a bowel kit, 2023&ndash;24. The two largest are labelled.</p>
+      <p class="fig-sub">Circle size is the number of invited people who did not return a bowel kit, 2023&ndash;24. Only areas with 15,000 or more are shown.</p>
       <div id="vis-map-unscreened" class="vis"></div>
       <figcaption>About 3.7 million of the 6.4 million people invited did not take part. The biggest gaps are in large outer-suburban areas: Fairfield in New South Wales (35,500 people), Whittlesea &ndash; Wallan (33,900) and Wyndham (33,000) in Victoria. Source: AIHW.</figcaption>
     </figure>
@@ -117,6 +119,8 @@
       <p class="fig-title">Most areas have not caught up</p>
       <p class="fig-sub">Change in bowel screening participation, 2018&ndash;19 to 2023&ndash;24, in percentage points.</p>
       <div id="vis-map-change" class="vis"></div>
+      <p class="fig-sub" style="margin-top:14px"><b>Zoomed in:</b> the big cities, same colours as the map above.</p>
+      <div id="vis-zoom-change" class="vis"></div>
       <figcaption>Participation is lower than in 2018&ndash;19 in 231 of the 301 areas with figures for both periods. Among areas with at least 5,000 people invited, the biggest fall was Burnett in Queensland (down 7.1 points) and the biggest rise was Leichhardt in Sydney (up 4.5). Source: AIHW.</figcaption>
     </figure>
     <figure class="vis-wide">
@@ -167,7 +171,7 @@
     </div>
     <figure class="vis-wide">
       <p class="fig-title">Over nine years, only the Northern Territory went backwards</p>
-      <p class="fig-sub">Bowel screening participation by state, 2014&ndash;15 compared with 2023&ndash;24 (people aged 50&ndash;74). The orange line went down.</p>
+      <p class="fig-sub">Percentage of invited people aged 50&ndash;74 who returned a bowel kit, 2014&ndash;15 and 2023&ndash;24. The number in brackets is the change in percentage points. The orange line went down.</p>
       <div id="vis-slope" class="vis"></div>
       <figcaption>The Northern Territory fell from 28.6 to 26.9. Every other state rose. Victoria (up 4.4 points) and New South Wales (up 4.1) gained the most; Queensland (up 1.2) and South Australia (up 1.6) the least. Source: AIHW.</figcaption>
     </figure>
@@ -186,6 +190,8 @@
           <p class="fig-title">Disadvantage and bowel screening, side by side</p>
           <p class="fig-sub">Each area is coloured by two things at once: how advantaged it is and how many people screen.</p>
           <div id="vis-map-bivar" class="vis"></div>
+          <p class="fig-sub" style="margin-top:14px"><b>Zoomed in:</b> the big cities.</p>
+          <div id="vis-zoom-bivar" class="vis"></div>
         </figure>
       </div>
       <div class="pure-u-1 pure-u-md-2-5 col-text" style="padding-left:28px">
@@ -244,8 +250,8 @@
       <li>Remote islands (such as Christmas and Cocos Islands) are not shown on the maps.</li>
       <li>The Vega-Lite code for every chart is in the <a href="js/" >js folder</a> of this site's repository as readable JSON.</li>
     </ul>
-    <p><b>Acknowledgement of AI use:</b> AI tools (Claude, by Anthropic) were used to help prepare the data, write chart code and improve the wording on this page. The ideas, topic choice and checking of results are the author's own.</p>
-    <p>Author: Adam &middot; FIT3179 Data Visualisation 2, Semester 2 2026 &middot; Published October 2026.</p>
+    <p><b>Acknowledgement of AI use:</b> AI tools (Claude, by Anthropic) were used to help write chart code and improve the wording on this page. The ideas, topic choice and checking of results are the author's own.</p>
+    <p>Author: Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2 &middot; Published 22 October 2026.</p>
   </footer>
 </div>
 <script src="js/main.js"></script>

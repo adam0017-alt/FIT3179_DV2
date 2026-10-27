@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "hconcat": [
     {
-      "width": 420,
+      "width": 370,
       "height": 380,
       "projection": {
         "type": "mercator"
@@ -88,8 +88,8 @@
               },
               "legend": {
                 "title": "People screened",
-                "orient": "bottom-left",
-                "offset": -4,
+                "orient": "right",
+                "offset": 8,
                 "symbolType": "square",
                 "symbolSize": 180,
                 "symbolStrokeWidth": 0
@@ -136,7 +136,7 @@
       }
     },
     {
-      "width": 420,
+      "width": 370,
       "height": 380,
       "projection": {
         "type": "mercator"
@@ -222,8 +222,8 @@
               },
               "legend": {
                 "title": "People screened",
-                "orient": "bottom-left",
-                "offset": -4,
+                "orient": "right",
+                "offset": 8,
                 "symbolType": "square",
                 "symbolSize": 180,
                 "symbolStrokeWidth": 0

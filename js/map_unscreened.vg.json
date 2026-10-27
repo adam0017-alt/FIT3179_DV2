@@ -63,15 +63,15 @@
       },
       "transform": [
         {
-          "filter": "isValid(datum.bowel_unscreened) && isValid(datum.lon)"
+          "filter": "isValid(datum.bowel_unscreened) && isValid(datum.lon) && datum.bowel_unscreened >= 15000"
         }
       ],
       "mark": {
         "type": "circle",
         "color": "#b4551d",
-        "opacity": 0.62,
+        "opacity": 0.6,
         "stroke": "white",
-        "strokeWidth": 0.6
+        "strokeWidth": 1
       },
       "encoding": {
         "longitude": {
@@ -82,25 +82,34 @@
           "field": "lat",
           "type": "quantitative"
         },
+        "order": {
+          "field": "bowel_unscreened",
+          "type": "quantitative",
+          "sort": "descending"
+        },
         "size": {
           "field": "bowel_unscreened",
           "type": "quantitative",
           "scale": {
             "type": "sqrt",
+            "domain": [
+              15000,
+              36000
+            ],
             "range": [
-              8,
-              1900
+              90,
+              800
             ]
           },
           "legend": {
             "title": "Invited but not screened",
-            "orient": "bottom-left",
-            "offset": -4,
+            "orient": "right",
+            "offset": 8,
             "format": ",.0f",
             "values": [
-              5000,
               15000,
-              30000
+              25000,
+              35000
             ]
           }
         },
