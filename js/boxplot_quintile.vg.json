@@ -1,113 +1,113 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "data/sa3_quintile_long.csv",
-    "format": {
-      "type": "csv"
-    }
-  },
-  "facet": {
-    "column": {
-      "field": "program",
-      "type": "nominal",
-      "title": null,
-      "sort": [
-        "Bowel",
-        "Breast",
-        "Cervical"
-      ]
-    }
-  },
-  "spec": {
-    "width": 230,
-    "height": 300,
-    "mark": {
-      "type": "boxplot",
-      "extent": 1.5,
-      "size": 26,
-      "median": {
-        "color": "white",
-        "size": 26,
-        "thickness": 2
-      }
-    },
-    "encoding": {
-      "x": {
-        "field": "irsd_quintile",
-        "type": "ordinal",
-        "title": null,
-        "axis": {
-          "labelAngle": 0,
-          "format": "d"
-        }
-      },
-      "y": {
-        "field": "rate",
-        "type": "quantitative",
-        "title": "Share of people screened (%)",
-        "scale": {
-          "domain": [
-            0,
-            100
-          ]
-        }
-      },
-      "color": {
-        "field": "program",
-        "type": "nominal",
-        "legend": null,
-        "scale": {
-          "domain": [
-            "Bowel",
-            "Breast",
-            "Cervical"
-          ],
-          "range": [
-            "#b4551d",
-            "#c23b78",
-            "#1f8a7e"
-          ]
-        }
-      }
-    }
-  },
-  "config": {
-    "background": null,
-    "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
-    "view": {
-      "stroke": null
-    },
-    "axis": {
-      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "labelColor": "#6b665e",
-      "titleColor": "#6b665e",
-      "labelFontSize": 12,
-      "titleFontSize": 12,
-      "titleFontWeight": "normal",
-      "gridColor": "#e7e1d6",
-      "domainColor": "#b8b0a2",
-      "tickColor": "#b8b0a2"
-    },
-    "legend": {
-      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "labelColor": "#6b665e",
-      "titleColor": "#6b665e",
-      "labelFontSize": 12,
-      "titleFontSize": 12,
-      "titleFontWeight": "normal"
-    },
-    "header": {
-      "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "labelColor": "#2b2a28",
-      "labelFontSize": 13,
-      "labelFontWeight": "bold"
-    },
-    "title": {
-      "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
-      "color": "#2b2a28"
-    }
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "data": {
+  "url": "data/sa3_quintile_long.csv",
+  "format": {
+   "type": "csv"
   }
+ },
+ "facet": {
+  "column": {
+   "field": "program",
+   "type": "nominal",
+   "title": null,
+   "sort": [
+    "Bowel",
+    "Breast",
+    "Cervical"
+   ]
+  }
+ },
+ "spec": {
+  "width": 230,
+  "height": 300,
+  "mark": {
+   "type": "boxplot",
+   "extent": 1.5,
+   "size": 26,
+   "median": {
+    "color": "white",
+    "size": 26,
+    "thickness": 2
+   }
+  },
+  "encoding": {
+   "x": {
+    "field": "irsd_quintile",
+    "type": "ordinal",
+    "title": "Disadvantage fifth (1 = most, 5 = least)",
+    "axis": {
+     "labelAngle": 0,
+     "format": "d"
+    }
+   },
+   "y": {
+    "field": "rate",
+    "type": "quantitative",
+    "title": "Share of people screened (%)",
+    "scale": {
+     "domain": [
+      0,
+      100
+     ]
+    }
+   },
+   "color": {
+    "field": "program",
+    "type": "nominal",
+    "legend": null,
+    "scale": {
+     "domain": [
+      "Bowel",
+      "Breast",
+      "Cervical"
+     ],
+     "range": [
+      "#b4551d",
+      "#c23b78",
+      "#1f8a7e"
+     ]
+    }
+   }
+  }
+ },
+ "config": {
+  "background": null,
+  "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "view": {
+   "stroke": null
+  },
+  "axis": {
+   "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "labelColor": "#6b665e",
+   "titleColor": "#6b665e",
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleFontWeight": "normal",
+   "gridColor": "#e7e1d6",
+   "domainColor": "#b8b0a2",
+   "tickColor": "#b8b0a2"
+  },
+  "legend": {
+   "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "labelColor": "#6b665e",
+   "titleColor": "#6b665e",
+   "labelFontSize": 12,
+   "titleFontSize": 12,
+   "titleFontWeight": "normal"
+  },
+  "header": {
+   "labelFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "titleFont": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "labelColor": "#2b2a28",
+   "labelFontSize": 13,
+   "labelFontWeight": "bold"
+  },
+  "title": {
+   "font": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "color": "#2b2a28"
+  }
+ }
 }

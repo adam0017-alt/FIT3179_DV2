@@ -22,7 +22,7 @@
     <p class="kicker">Preventive health in Australia</p>
     <h1>Who gets screened for cancer?</h1>
     <p class="lede">Bowel, breast and cervical cancers are much easier to treat when they are found early. Every year Australians are invited to check. This page shows who takes up the offer, where, and who is being missed.</p>
-    <p class="byline">By Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2, Monash University &middot; 22 October 2026</p>
+    <p class="byline">By Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2 &middot; 27 October 2026</p>
   </header>
 
   <!-- 1 -->
@@ -67,7 +67,7 @@
           <p class="fig-title">Share of eligible people who took part, 2014 to 2025</p>
           <p class="fig-sub">Each point is a two-year period, placed at the year it ended.</p>
           <div id="vis-trend" class="vis"></div>
-          <figcaption>Bowel: people aged 50&ndash;74. Breast: women aged 50&ndash;74. Cervical is left out because AIHW reports it over a longer window. The last breast point (2024&ndash;25) is preliminary. Source: AIHW.</figcaption>
+          <figcaption>Bowel: people aged 50&ndash;74. Breast: women aged 50&ndash;74. Cervical is left out because it is measured over 5.5 years, not 2, so it can’t be compared on the same line. The last breast point (2024&ndash;25) is preliminary. Source: AIHW.</figcaption>
         </figure>
       </div>
     </div>
@@ -109,7 +109,8 @@
     <div class="text"><p>Rates are only half the story. A small rural area can have a low rate and few people. The next map shows where the most people are being missed, in numbers.</p></div>
     <figure class="vis-wide">
       <p class="fig-title">Where the most people were invited but did not screen</p>
-      <p class="fig-sub">Circle size is the number of invited people who did not return a bowel kit, 2023&ndash;24. Only areas with 15,000 or more are shown.</p>
+      <p class="fig-sub">Circle size is the number of invited people who did not return a bowel kit, 2023&ndash;24. Each capital city is one circle (areas within about 60 km added together). Other areas with 15,000 or more are shown on their own.</p>
+      <figcaption>About 3.7 million of the 6.4 million people invited did not take part. Sydney and Melbourne alone account for about 1.4 million of them. Within cities the biggest gaps are in outer-suburban areas such as Fairfield in New South Wales (35,500 people), Whittlesea &ndash; Wallan (33,900) and Wyndham (33,000) in Victoria. Source: AIHW.</figcaption>
       <div id="vis-map-unscreened" class="vis"></div>
       <figcaption>About 3.7 million of the 6.4 million people invited did not take part. The biggest gaps are in large outer-suburban areas: Fairfield in New South Wales (35,500 people), Whittlesea &ndash; Wallan (33,900) and Wyndham (33,000) in Victoria. Source: AIHW.</figcaption>
     </figure>
@@ -207,7 +208,7 @@
     </div>
     <figure class="vis-wide">
       <p class="fig-title">The gap is biggest for cervical screening</p>
-      <p class="fig-sub">Areas are grouped into fifths from 1 (most disadvantaged) to 5 (least disadvantaged). Each box covers the middle half of areas in a group; the white line is the middle area.</p>
+      <p class="fig-sub">Areas are grouped into fifths from 1 (most disadvantaged) to 5 (least disadvantaged). Each box covers the middle half of areas in a group; the white line is the middle area. Dots are areas unusually high or low for their group.</p>
       <div id="vis-box" class="vis"></div>
       <figcaption>In the most disadvantaged fifth of areas the middle area has a cervical screening rate of about 73%. In the least disadvantaged fifth it is 86%. For bowel the gap is 37.5% against 44.8%. For breast screening only the most disadvantaged fifth stands out (49% against about 53% in every other fifth). Source: AIHW; ABS SEIFA 2021.</figcaption>
     </figure>
@@ -250,8 +251,8 @@
       <li>Remote islands (such as Christmas and Cocos Islands) are not shown on the maps.</li>
       <li>The Vega-Lite code for every chart is in the <a href="js/" >js folder</a> of this site's repository as readable JSON.</li>
     </ul>
-    <p><b>Acknowledgement of AI use:</b> AI tools (Claude, by Anthropic) were used to help write chart code and improve the wording on this page. The ideas, topic choice and checking of results are the author's own.</p>
-    <p>Author: Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2 &middot; Published 22 October 2026.</p>
+    
+    <p>Author: Adam Danish Kho bin Fred Mustafa 35209593 &middot; FIT3179 Data Visualisation 2 &middot; Published 27 October 2026.</p>
   </footer>
 </div>
 <script src="js/main.js"></script>
